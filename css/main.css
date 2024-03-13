@@ -300,6 +300,7 @@
 .aboutMain p {
   margin-top: 32px;
   line-height: 26px;
+  font-size: 20px;
 }
 .aboutMain .videoText {
   display: flex;
@@ -324,7 +325,7 @@
 .newsMain {
   background-color: #006D77;
   max-height: 700px;
-  height: 700px;
+  height: 1000px;
   margin-top: -128px;
   border-radius: 0 100px 0 0px;
   padding: 128px 256px;
@@ -334,6 +335,116 @@
   font-size: 50px;
   max-width: 55%;
   color: #ffffff;
+}
+.newsMain .news {
+  margin-top: 64px;
+}
+.newsMain .news ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.newsMain .news ul li {
+  list-style: none;
+  padding: 15px;
+  height: auto;
+  border-radius: 25px;
+  width: 20%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.newsMain .news ul li h4 {
+  font-size: 30px;
+}
+.newsMain .news ul li p {
+  margin-top: 64px;
+}
+.newsMain .news ul li:hover {
+  background-color: #F0F3BD;
+  color: #023684;
+  transition: all 0.5s;
+}
+.newsMain .link {
+  display: flex;
+  align-items: center;
+  margin-top: 64px;
+}
+.newsMain .link .videoIcon {
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.newsMain .link .text {
+  margin-left: 32px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.features h2 {
+  padding: 0 256px;
+  margin-top: 64px;
+  font-size: 30px;
+  color: #023684;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+.features .featuresOne {
+  display: flex;
+  gap: 16px;
+}
+.features .featuresOne .fLeft {
+  width: 60%;
+}
+.features .featuresOne .fLeft .featureOneImg {
+  margin-top: 32px;
+  width: 100%;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 0 80px 0;
+}
+.features .featuresOne .fRight {
+  width: 40%;
+  padding: 0 128px;
+}
+.features .featuresOne .fRight h5 {
+  color: #023684;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 24px;
+  font-size: 25px;
+}
+.features .featuresOne .fRight p {
+  margin-top: 32px;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.features .featuresOne .fRight .link {
+  margin-top: 128px;
+  display: flex;
+  align-items: center;
+}
+.features .featuresOne .fRight .link .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #023684;
+  width: 50px;
+  height: 50px;
+  fill: white;
+  stroke: white;
+  border-radius: 50px;
+}
+.features .featuresOne .fRight .link .text {
+  margin-left: 32px;
+  font-size: 20px;
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 
 .cursor, .hand {
