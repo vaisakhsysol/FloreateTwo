@@ -545,6 +545,55 @@
   box-shadow: 5px 5px 15px rgb(195, 195, 255);
 }
 
+.galleryContainer {
+  padding: 128px;
+  /* Main CSS */
+}
+.galleryContainer h2 {
+  color: #023684;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Fira Sans Condensed", sans-serif;
+  margin-top: 24px;
+  padding: 64px;
+  font-size: 25px;
+}
+.galleryContainer img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+.galleryContainer .grid-wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.galleryContainer .grid-wrapper > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.galleryContainer .grid-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+.galleryContainer .grid-wrapper .wide {
+  grid-column: span 2;
+}
+.galleryContainer .grid-wrapper .tall {
+  grid-row: span 2;
+}
+.galleryContainer .grid-wrapper .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
 .footerContainer {
   width: 100%;
   font-family: "Hind Madurai", sans-serif;
@@ -649,7 +698,7 @@
 }
 
 .cursor {
-  background: red;
+  background: #023684;
   top: 0;
   width: 15px;
   height: 15px;
