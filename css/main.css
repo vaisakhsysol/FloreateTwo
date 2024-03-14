@@ -350,6 +350,7 @@
   height: auto;
   border-radius: 25px;
   width: 20%;
+  min-height: 150px;
   background-color: #ffffff;
   cursor: pointer;
 }
@@ -386,6 +387,9 @@
   color: #ffffff;
 }
 
+.features {
+  margin-top: 64px;
+}
 .features h2 {
   padding: 0 256px;
   margin-top: 64px;
@@ -394,6 +398,7 @@
   font-family: "Fira Sans Condensed", sans-serif;
 }
 .features .featuresOne {
+  margin-top: 32px;
   display: flex;
   gap: 16px;
 }
@@ -446,8 +451,196 @@
   font-size: 20px;
   font-family: "Fira Sans Condensed", sans-serif;
 }
+.features .featuresTwo {
+  margin-top: 64px;
+  display: flex;
+  gap: 16px;
+}
+.features .featuresTwo .fLeft {
+  width: 60%;
+}
+.features .featuresTwo .fLeft .featureOneImg {
+  margin-top: 32px;
+  width: 100%;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 0 0 80px;
+}
+.features .featuresTwo .fRight {
+  width: 40%;
+  padding: 0 128px;
+}
+.features .featuresTwo .fRight h5 {
+  color: #023684;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 24px;
+  font-size: 25px;
+}
+.features .featuresTwo .fRight p {
+  margin-top: 32px;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.features .featuresTwo .fRight .link {
+  margin-top: 128px;
+  display: flex;
+  align-items: center;
+}
+.features .featuresTwo .fRight .link .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #023684;
+  width: 50px;
+  height: 50px;
+  fill: white;
+  stroke: white;
+  border-radius: 50px;
+}
+.features .featuresTwo .fRight .link .text {
+  margin-left: 32px;
+  font-size: 20px;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
 
-.cursor, .hand {
+.activitiesContainer {
+  background-color: #F0F3BD;
+  padding: 128px;
+  margin-top: 128px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  border-radius: 100px 0 100px 0;
+}
+.activitiesContainer h2 {
+  margin-top: 64px;
+  font-size: 30px;
+  color: #023684;
+}
+.activitiesContainer ul {
+  display: flex;
+  justify-content: space-between;
+}
+.activitiesContainer ul li {
+  margin-top: 32px;
+  list-style: none;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 70px 0 70px 0;
+  text-align: center;
+  cursor: pointer;
+}
+.activitiesContainer ul li img {
+  margin-top: 32px;
+}
+.activitiesContainer ul li p {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.activitiesContainer ul li:hover {
+  background-color: #F0F3BD;
+  border: 1px solid #023684;
+  transition: all 0.5s;
+  box-shadow: 5px 5px 15px rgb(195, 195, 255);
+}
+
+.footerContainer {
+  width: 100%;
+  font-family: "Hind Madurai", sans-serif;
+  border-radius: 50px;
+}
+.footerContainer .footerContainerTop {
+  border-radius: 50px 50px 0 0;
+  padding: 64px;
+  margin-top: 128px;
+  background-color: #006D77;
+  display: flex;
+  justify-content: space-around;
+  color: #ffffff;
+}
+.footerContainer .footerContainerTop .footerIconandText {
+  width: 350px;
+}
+.footerContainer .footerContainerTop .footerIconandText p {
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.footerContainer .footerContainerTop .footerLinkSectionOne p {
+  font-family: 800;
+  font-size: 25px;
+}
+.footerContainer .footerContainerTop .footerLinkSectionOne ul {
+  padding: 0;
+}
+.footerContainer .footerContainerTop .footerLinkSectionOne li {
+  list-style: none;
+  cursor: pointer;
+  margin-top: 8px;
+  font-size: 12px;
+}
+.footerContainer .footerContainerTop .footerLinkSectionOne li:hover {
+  list-style: disc;
+  text-decoration: underline;
+  transition: all 0.5s ease-in;
+}
+.footerContainer .footerContainerTop .addressAndSocial {
+  width: 400px;
+}
+.footerContainer .footerContainerTop .addressAndSocial .footerAddress {
+  font-size: 25px;
+  width: 80%;
+}
+.footerContainer .footerContainerTop .addressAndSocial .footerAdderessLoc {
+  font-size: 12px;
+  width: 50%;
+}
+.footerContainer .footerContainerTop .addressAndSocial .socialMediaContainer {
+  margin-top: 8px;
+  display: flex;
+  list-style: none;
+  width: 70%;
+  padding: 0;
+}
+.footerContainer .footerContainerTop .addressAndSocial .socialMediaContainer li {
+  padding: 0;
+  margin-right: 8px;
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.footerContainer .footerContainerTop .addressAndSocial .socialMediaContainer li:hover {
+  scale: 1.1;
+  transition: all 0.5s ease-in-out;
+}
+.footerContainer .footerContainerBottom {
+  background-color: #006D77;
+  padding: 0 64px;
+}
+.footerContainer .footerContainerBottom .line {
+  background-color: #ffffff;
+  padding: 1px;
+  margin-top: -32px;
+}
+.footerContainer .credsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.footerContainer .credsContainer .credLeft {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.cursor, .hand, .clickHand {
   position: fixed;
   left: 0;
   border-radius: 50%;
@@ -456,7 +649,7 @@
 }
 
 .cursor {
-  background: #023684;
+  background: red;
   top: 0;
   width: 15px;
   height: 15px;
@@ -475,6 +668,20 @@
   z-index: 10000;
   opacity: 0;
   font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.clickHand {
+  display: grid;
+  place-content: center;
+  background-color: #ffffff;
+  color: #023684;
+  top: 50%;
+  width: 80px;
+  height: 80px;
+  z-index: 10000;
+  opacity: 0;
+  font-family: "Fira Sans Condensed", sans-serif;
+  border: 1px solid #023684;
 }
 
 @media (max-width: 900px) {
