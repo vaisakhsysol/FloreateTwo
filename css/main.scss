@@ -754,7 +754,181 @@
      
 }
 
-  
+.contactUsContainer{
+    padding: 64px;
+    background-color: $accentColor;
+    margin-top: 32px;
+    height: 600px;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    // font-family: 'Montserrat', sans-serif;
+    font-family: "Fira Sans Condensed", sans-serif;
+
+
+    .contactUsLeft{
+        width: 50%;
+
+        h2{
+            font-weight: 800;
+            font-size: map-get($FontSize, veryBig );
+            color: $secondaryColor;
+            z-index: 10;
+        }
+
+        p{
+            font-size: map-get($FontSize, regular);
+            color: $secondaryColor;
+            width: 50%;
+            margin-top: 32px;
+
+        }
+
+        .whiteBar{
+            padding: 20px;
+            width: 600px;
+            background-color: $primaryColor;
+            position: relative;
+            top: -170px;
+            z-index: 0;
+            opacity: 0.4;
+        }
+        .contactSocials{
+            margin-top: 64px;
+            ul{
+                display: flex;
+                padding: 0;
+            }
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 75px;
+                margin-left: 18px;
+                // justify-content: space-between;
+                height: 75px;
+                list-style: none;
+                background-color: $secondaryColor;
+                padding: 15px;
+                border-radius: 50px;
+
+            }
+        }
+
+        .leafOne{
+            position: relative;
+            top: -50%;
+            left: -80px;
+            overflow: hidden;
+        }
+    }
+    .contactUsRight{
+        width: 50%;
+        text-align: left;
+    font-family: "Fira Sans Condensed", sans-serif;
+
+
+        h4{
+            font-size: map-get($FontSize, medium );
+            font-weight: 700;
+            color: $secondaryColor;
+        }
+        p{
+            font-size: map-get($FontSize, regular );
+
+        }
+
+        .inputFields{
+            .names{
+                display: flex;
+                gap: 10px;
+                .name{
+                    
+                    width: 50%;
+
+                    background-color: $primaryColor;
+                    display: flex;
+                    align-items: center;
+                    padding: 5px;
+                    border: 0.5px solid $textColorSecondary;
+                    .nameInput{
+                        display: flex;
+                        flex-direction: column;
+                        border: none;
+                        margin-left: 18px;
+
+
+                        input{
+                            border: none;
+                            padding: 5px;
+                            width: 100%;
+
+                        }
+                    }
+
+                }
+            }
+
+            .email{
+                display: flex;
+                margin-top: 16px;
+                width: 100%;
+                padding: 5px;
+                 border: 0.5px solid $textColorSecondary;
+                 background-color: $primaryColor;
+
+                 .emailInput{
+                    margin-left: 18px;
+
+                    input{
+                        border: none;
+                        padding: 5px;
+                        width: 100%;
+    
+                    }
+                 }
+                 
+            }
+
+            .textArea{
+
+                width: 100%;
+                padding: 5px;
+                 border: 0.5px solid $textColorSecondary;
+                 background-color: $primaryColor;
+                 margin-top: 16px;
+                 color: $textColorSecondary;
+
+                 input{
+                    border: none;
+                    width: 100%;
+                    padding: 18px;
+
+                 }
+
+                 
+                
+            }
+
+            .sendButton{
+                width: 100%;
+                background-color: $secondaryColor;
+                padding: 15px;
+                margin-top: 16px;
+                border: none;
+                color: $primaryColor;
+            }
+        }
+
+        .leadTwo{
+            position: relative;
+            top: -600px;
+            overflow: hidden;
+            left: 400px;
+            // overflow: hidden;
+        }
+    }
+}
 
 .footerContainer{
 
@@ -1955,6 +2129,186 @@
           
          
     }
+
+    .contactUsContainer{
+        padding: 32px;
+        background-color: $accentColor;
+        margin-top: 32px;
+        height: 600px;
+        display: flex;
+        gap: 32px;
+        justify-content: space-between;
+        // font-family: 'Montserrat', sans-serif;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+    
+        .contactUsLeft{
+            width: 50%;
+    
+            h2{
+                font-weight: 800;
+                font-size: map-get($FontSize, big );
+                color: $secondaryColor;
+                z-index: 10;
+            }
+    
+            p{
+                font-size: map-get($FontSize, regular);
+                color: $secondaryColor;
+                width: 100%;
+                margin-top: 32px;
+    
+            }
+    
+            .whiteBar{
+                padding: 20px;
+                width: 600px;
+                background-color: $primaryColor;
+                position: relative;
+                top: -170px;
+                z-index: 0;
+                opacity: 0.4;
+                display: none;
+            }
+            .contactSocials{
+                margin-top: 64px;
+                ul{
+                    display: flex;
+                    padding: 0;
+                }
+                li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 75px;
+                    margin-left: 18px;
+                    // justify-content: space-between;
+                    height: 75px;
+                    list-style: none;
+                    background-color: $secondaryColor;
+                    padding: 15px;
+                    border-radius: 50px;
+    
+                }
+            }
+    
+            .leafOne{
+                position: relative;
+                top: -50%;
+                left: -80px;
+                overflow: hidden;
+            }
+        }
+        .contactUsRight{
+            width: 50%;
+            text-align: left;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+    
+            h4{
+                font-size: map-get($FontSize, medium );
+                font-weight: 700;
+                color: $secondaryColor;
+            }
+            p{
+                font-size: map-get($FontSize, regular );
+                margin-top: 16px;
+    
+            }
+    
+            .inputFields{
+                margin-top: 16px;
+
+                .names{
+                    display: flex;
+                    gap: 10px;
+                    .name{
+                        
+                        width: 50%;
+    
+                        background-color: $primaryColor;
+                        display: flex;
+                        align-items: center;
+                        padding: 5px;
+                        border: 0.5px solid $textColorSecondary;
+                        .nameInput{
+                            display: flex;
+                            flex-direction: column;
+                            border: none;
+                            margin-left: 18px;
+    
+    
+                            input{
+                                border: none;
+                                padding: 5px;
+                                width: 100%;
+    
+                            }
+                        }
+    
+                    }
+                }
+    
+                .email{
+                    display: flex;
+                    margin-top: 16px;
+                    width: 100%;
+                    padding: 5px;
+                     border: 0.5px solid $textColorSecondary;
+                     background-color: $primaryColor;
+    
+                     .emailInput{
+                        margin-left: 18px;
+    
+                        input{
+                            border: none;
+                            padding: 5px;
+                            width: 100%;
+        
+                        }
+                     }
+                     
+                }
+    
+                .textArea{
+    
+                    width: 100%;
+                    padding: 5px;
+                     border: 0.5px solid $textColorSecondary;
+                     background-color: $primaryColor;
+                     margin-top: 16px;
+                     color: $textColorSecondary;
+    
+                     input{
+                        border: none;
+                        width: 100%;
+                        padding: 18px;
+    
+                     }
+    
+                     
+                    
+                }
+    
+                .sendButton{
+                    width: 100%;
+                    background-color: $secondaryColor;
+                    padding: 15px;
+                    margin-top: 16px;
+                    border: none;
+                    color: $primaryColor;
+                }
+            }
+    
+            .leadTwo{
+                position: relative;
+                top: -600px;
+                overflow: hidden;
+                left: 400px;
+                // overflow: hidden;
+            }
+        }
+    }
     
 }
 
@@ -2503,6 +2857,189 @@
           
          
     }
+
+    .contactUsContainer{
+        border-radius: 50px 50px 0 0;
+        padding: 32px;
+        background-color: $accentColor;
+        margin-top: 32px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: space-between;
+        // font-family: 'Montserrat', sans-serif;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+    
+        .contactUsLeft{
+            width: 50%;
+    
+            h2{
+                font-weight: 800;
+                font-size: map-get($FontSize, big );
+                color: $secondaryColor;
+                z-index: 10;
+            }
+    
+            p{
+                font-size: map-get($FontSize, regular);
+                color: $secondaryColor;
+                width: 100%;
+                margin-top: 32px;
+    
+            }
+    
+            .whiteBar{
+                padding: 20px;
+                width: 600px;
+                background-color: $primaryColor;
+                position: relative;
+                top: -170px;
+                z-index: 0;
+                opacity: 0.4;
+                display: none;
+            }
+            .contactSocials{
+                margin-top: 64px;
+                ul{
+                    display: flex;
+                    padding: 0;
+                }
+                li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 75px;
+                    margin-left: 18px;
+                    // justify-content: space-between;
+                    height: 75px;
+                    list-style: none;
+                    background-color: $secondaryColor;
+                    padding: 15px;
+                    border-radius: 50px;
+    
+                }
+            }
+    
+            .leafOne{
+                position: relative;
+                top: -50%;
+                left: -80px;
+                overflow: hidden;
+            }
+        }
+        .contactUsRight{
+            width: 100%;
+            text-align: left;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+    
+            h4{
+                font-size: map-get($FontSize, medium );
+                font-weight: 700;
+                color: $secondaryColor;
+            }
+            p{
+                font-size: map-get($FontSize, regular );
+                margin-top: 16px;
+    
+            }
+    
+            .inputFields{
+                margin-top: 16px;
+
+                .names{
+                    display: flex;
+                    gap: 10px;
+                    .name{
+                        
+                        width: 50%;
+    
+                        background-color: $primaryColor;
+                        display: flex;
+                        align-items: center;
+                        padding: 5px;
+                        border: 0.5px solid $textColorSecondary;
+                        .nameInput{
+                            display: flex;
+                            flex-direction: column;
+                            border: none;
+                            margin-left: 18px;
+    
+    
+                            input{
+                                border: none;
+                                padding: 5px;
+                                width: 100%;
+    
+                            }
+                        }
+    
+                    }
+                }
+    
+                .email{
+                    display: flex;
+                    margin-top: 16px;
+                    width: 100%;
+                    padding: 5px;
+                     border: 0.5px solid $textColorSecondary;
+                     background-color: $primaryColor;
+    
+                     .emailInput{
+                        margin-left: 18px;
+    
+                        input{
+                            border: none;
+                            padding: 5px;
+                            width: 100%;
+        
+                        }
+                     }
+                     
+                }
+    
+                .textArea{
+    
+                    width: 100%;
+                    padding: 5px;
+                     border: 0.5px solid $textColorSecondary;
+                     background-color: $primaryColor;
+                     margin-top: 16px;
+                     color: $textColorSecondary;
+    
+                     input{
+                        border: none;
+                        width: 100%;
+                        padding: 18px;
+    
+                     }
+    
+                     
+                    
+                }
+    
+                .sendButton{
+                    width: 100%;
+                    background-color: $secondaryColor;
+                    padding: 15px;
+                    margin-top: 16px;
+                    border: none;
+                    color: $primaryColor;
+                }
+            }
+    
+            .leadTwo{
+                position: relative;
+                top: -600px;
+                overflow: hidden;
+                left: 400px;
+                // overflow: hidden;
+            }
+        }
+    }
+
     
 }
 
@@ -3271,6 +3808,188 @@
         
           
          
+    }
+
+    .contactUsContainer{
+        border-radius: 50px 50px 0 0;
+        padding: 32px;
+        background-color: $accentColor;
+        margin-top: 32px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: space-between;
+        // font-family: 'Montserrat', sans-serif;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+    
+        .contactUsLeft{
+            width: 100%;
+    
+            h2{
+                font-weight: 800;
+                font-size: map-get($FontSize, big );
+                color: $secondaryColor;
+                z-index: 10;
+            }
+    
+            p{
+                font-size: map-get($FontSize, regular);
+                color: $secondaryColor;
+                width: 100%;
+                margin-top: 32px;
+    
+            }
+    
+            .whiteBar{
+                padding: 20px;
+                width: 600px;
+                background-color: $primaryColor;
+                position: relative;
+                top: -170px;
+                z-index: 0;
+                opacity: 0.4;
+                display: none;
+            }
+            .contactSocials{
+                margin-top: 64px;
+                ul{
+                    display: flex;
+                    padding: 0;
+                }
+                li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 75px;
+                    margin-left: 8px;
+                    // justify-content: space-between;
+                    height: 75px;
+                    list-style: none;
+                    background-color: $secondaryColor;
+                    padding: 15px;
+                    border-radius: 50px;
+    
+                }
+            }
+    
+            .leafOne{
+                position: relative;
+                top: -50%;
+                left: -80px;
+                overflow: hidden;
+            }
+        }
+        .contactUsRight{
+            width: 100%;
+            text-align: left;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+    
+            h4{
+                font-size: map-get($FontSize, medium );
+                font-weight: 700;
+                color: $secondaryColor;
+            }
+            p{
+                font-size: map-get($FontSize, regular );
+                margin-top: 16px;
+    
+            }
+    
+            .inputFields{
+                margin-top: 16px;
+
+                .names{
+                    display: flex;
+                    gap: 10px;
+                    .name{
+                        
+                        width: 50%;
+    
+                        background-color: $primaryColor;
+                        display: flex;
+                        align-items: center;
+                        padding: 5px;
+                        border: 0.5px solid $textColorSecondary;
+                        .nameInput{
+                            display: flex;
+                            flex-direction: column;
+                            border: none;
+                            margin-left: 18px;
+    
+    
+                            input{
+                                border: none;
+                                padding: 5px;
+                                width: 100%;
+    
+                            }
+                        }
+    
+                    }
+                }
+    
+                .email{
+                    display: flex;
+                    margin-top: 16px;
+                    width: 100%;
+                    padding: 5px;
+                     border: 0.5px solid $textColorSecondary;
+                     background-color: $primaryColor;
+    
+                     .emailInput{
+                        margin-left: 18px;
+    
+                        input{
+                            border: none;
+                            padding: 5px;
+                            width: 100%;
+        
+                        }
+                     }
+                     
+                }
+    
+                .textArea{
+    
+                    width: 100%;
+                    padding: 5px;
+                     border: 0.5px solid $textColorSecondary;
+                     background-color: $primaryColor;
+                     margin-top: 16px;
+                     color: $textColorSecondary;
+    
+                     input{
+                        border: none;
+                        width: 100%;
+                        padding: 18px;
+    
+                     }
+    
+                     
+                    
+                }
+    
+                .sendButton{
+                    width: 100%;
+                    background-color: $secondaryColor;
+                    padding: 15px;
+                    margin-top: 16px;
+                    border: none;
+                    color: $primaryColor;
+                }
+            }
+    
+            .leadTwo{
+                position: relative;
+                top: -600px;
+                overflow: hidden;
+                left: 400px;
+                // overflow: hidden;
+            }
+        }
     }
     
 }
@@ -4051,6 +4770,188 @@
         
           
          
+    }
+
+    .contactUsContainer{
+        border-radius: 50px 50px 0 0;
+        padding: 16px;
+        background-color: $accentColor;
+        margin-top: 32px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: space-between;
+        // font-family: 'Montserrat', sans-serif;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+    
+        .contactUsLeft{
+            width: 100%;
+    
+            h2{
+                font-weight: 800;
+                font-size: map-get($FontSize, big );
+                color: $secondaryColor;
+                z-index: 10;
+            }
+    
+            p{
+                font-size: map-get($FontSize, regular);
+                color: $secondaryColor;
+                width: 100%;
+                margin-top: 32px;
+    
+            }
+    
+            .whiteBar{
+                padding: 20px;
+                width: 600px;
+                background-color: $primaryColor;
+                position: relative;
+                top: -170px;
+                z-index: 0;
+                opacity: 0.4;
+                display: none;
+            }
+            .contactSocials{
+                margin-top: 64px;
+                ul{
+                    display: flex;
+                    padding: 0;
+                }
+                li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 75px;
+                    margin-left: 8px;
+                    // justify-content: space-between;
+                    height: 75px;
+                    list-style: none;
+                    background-color: $secondaryColor;
+                    padding: 15px;
+                    border-radius: 50px;
+    
+                }
+            }
+    
+            .leafOne{
+                position: relative;
+                top: -50%;
+                left: -80px;
+                overflow: hidden;
+            }
+        }
+        .contactUsRight{
+            width: 100%;
+            text-align: left;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+    
+            h4{
+                font-size: map-get($FontSize, medium );
+                font-weight: 700;
+                color: $secondaryColor;
+            }
+            p{
+                font-size: map-get($FontSize, regular );
+                margin-top: 16px;
+    
+            }
+    
+            .inputFields{
+                margin-top: 16px;
+
+                .names{
+                    display: flex;
+                    gap: 10px;
+                    .name{
+                        
+                        width: 50%;
+    
+                        background-color: $primaryColor;
+                        display: flex;
+                        align-items: center;
+                        padding: 5px;
+                        border: 0.5px solid $textColorSecondary;
+                        .nameInput{
+                            display: flex;
+                            flex-direction: column;
+                            border: none;
+                            margin-left: 18px;
+    
+    
+                            input{
+                                border: none;
+                                padding: 5px;
+                                width: 100%;
+    
+                            }
+                        }
+    
+                    }
+                }
+    
+                .email{
+                    display: flex;
+                    margin-top: 16px;
+                    width: 100%;
+                    padding: 5px;
+                     border: 0.5px solid $textColorSecondary;
+                     background-color: $primaryColor;
+    
+                     .emailInput{
+                        margin-left: 18px;
+    
+                        input{
+                            border: none;
+                            padding: 5px;
+                            width: 100%;
+        
+                        }
+                     }
+                     
+                }
+    
+                .textArea{
+    
+                    width: 100%;
+                    padding: 5px;
+                     border: 0.5px solid $textColorSecondary;
+                     background-color: $primaryColor;
+                     margin-top: 16px;
+                     color: $textColorSecondary;
+    
+                     input{
+                        border: none;
+                        width: 100%;
+                        padding: 18px;
+    
+                     }
+    
+                     
+                    
+                }
+    
+                .sendButton{
+                    width: 100%;
+                    background-color: $secondaryColor;
+                    padding: 15px;
+                    margin-top: 16px;
+                    border: none;
+                    color: $primaryColor;
+                }
+            }
+    
+            .leadTwo{
+                position: relative;
+                top: -600px;
+                overflow: hidden;
+                left: 400px;
+                // overflow: hidden;
+            }
+        }
     }
 }
 
