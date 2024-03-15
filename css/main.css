@@ -132,7 +132,7 @@
   margin: 0 auto;
   transition: 1s;
 }
-.container .nav-container .nav .col .nav-link a {
+.container .nav-container .nav .col .nav-link {
   position: relative;
   top: 60px;
   text-decoration: none;
@@ -731,6 +731,48 @@
   top: -600px;
   overflow: hidden;
   left: 400px;
+}
+
+.galleryTabs {
+  margin-top: 0px;
+  padding: 64px;
+  /* Create four equal columns that sits next to each other */
+  /* Add styling for the selected tab */
+}
+.galleryTabs .row { /* IE10 */
+  display: flex; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.galleryTabs .column { /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.galleryTabs .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.galleryTabs .cards {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.galleryTabs .card {
+  background-color: #F0F3BD;
+  color: #313131;
+  padding: 1rem;
+  height: 4rem;
+  cursor: pointer;
+}
+.galleryTabs .content {
+  display: none;
+  margin-top: 20px;
+}
+.galleryTabs .card.active {
+  background-color: #006D77;
+  color: #023684;
 }
 
 .footerContainer {
@@ -2387,6 +2429,35 @@
     overflow: hidden;
     left: 400px;
   }
+  .galleryTabs {
+    margin-top: 138px;
+    padding: 64px;
+    /* Add styling for the selected tab */
+  }
+  .galleryTabs .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .galleryTabs .cards {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .galleryTabs .card {
+    background-color: #F0F3BD;
+    color: #313131;
+    padding: 1rem;
+    height: 4rem;
+    cursor: pointer;
+  }
+  .galleryTabs .content {
+    display: none;
+    margin-top: 20px;
+  }
+  .galleryTabs .card.active {
+    background-color: #006D77;
+    color: #023684;
+  }
 }
 @media (min-width: 425px) and (max-width: 767px) {
   .container {
@@ -3129,6 +3200,35 @@
     top: -600px;
     overflow: hidden;
     left: 400px;
+  }
+  .galleryTabs {
+    margin-top: 138px;
+    padding: 64px;
+    /* Add styling for the selected tab */
+  }
+  .galleryTabs .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .galleryTabs .cards {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .galleryTabs .card {
+    background-color: #F0F3BD;
+    color: #313131;
+    padding: 1rem;
+    height: 4rem;
+    cursor: pointer;
+  }
+  .galleryTabs .content {
+    display: none;
+    margin-top: 20px;
+  }
+  .galleryTabs .card.active {
+    background-color: #006D77;
+    color: #023684;
   }
 }
 @media screen and (max-width: 424px) {
@@ -3879,6 +3979,35 @@
     top: -600px;
     overflow: hidden;
     left: 400px;
+  }
+  .galleryTabs {
+    margin-top: 138px;
+    padding: 64px;
+    /* Add styling for the selected tab */
+  }
+  .galleryTabs .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .galleryTabs .cards {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .galleryTabs .card {
+    background-color: #F0F3BD;
+    color: #313131;
+    padding: 1rem;
+    height: 4rem;
+    cursor: pointer;
+  }
+  .galleryTabs .content {
+    display: none;
+    margin-top: 20px;
+  }
+  .galleryTabs .card.active {
+    background-color: #006D77;
+    color: #023684;
   }
 }
 @media (max-width: 900px) {

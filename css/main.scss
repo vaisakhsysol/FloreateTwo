@@ -171,7 +171,7 @@
 
                  }
 
-                .nav-link a{
+                .nav-link{
                     position: relative;
                     top: 60px;
                     text-decoration: none;
@@ -929,6 +929,61 @@
         }
     }
 }
+.galleryTabs{
+    margin-top: 0px;
+    padding: 64px;
+
+
+    .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+      /* Create four equal columns that sits next to each other */
+      .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+      
+
+    .cards {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .card {
+        background-color: $accentColor;
+        color: $textColorSecondary;
+        padding: 1rem;
+        height: 4rem;
+        cursor: pointer;
+    }
+    
+    .content {
+        display: none;
+        margin-top: 20px;
+
+        
+    }
+    
+    /* Add styling for the selected tab */
+    .card.active {
+        background-color: $secondaryColor;
+        color: $textColor;
+    }
+} 
 
 .footerContainer{
 
@@ -3040,6 +3095,44 @@
         }
     }
 
+    .galleryTabs{
+        margin-top: 138px;
+        padding: 64px;
+    
+    
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+          }
+    
+        .cards {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        
+        .card {
+            background-color: $accentColor;
+            color: $textColorSecondary;
+            padding: 1rem;
+            height: 4rem;
+            cursor: pointer;
+        }
+        
+        .content {
+            display: none;
+            margin-top: 20px;
+    
+            
+        }
+        
+        /* Add styling for the selected tab */
+        .card.active {
+            background-color: $secondaryColor;
+            color: $textColor;
+        }
+    } 
     
 }
 
@@ -3991,6 +4084,45 @@
             }
         }
     }
+
+    .galleryTabs{
+        margin-top: 138px;
+        padding: 64px;
+    
+    
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+          }
+    
+        .cards {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        
+        .card {
+            background-color: $accentColor;
+            color: $textColorSecondary;
+            padding: 1rem;
+            height: 4rem;
+            cursor: pointer;
+        }
+        
+        .content {
+            display: none;
+            margin-top: 20px;
+    
+            
+        }
+        
+        /* Add styling for the selected tab */
+        .card.active {
+            background-color: $secondaryColor;
+            color: $textColor;
+        }
+    } 
     
 }
 
@@ -4953,6 +5085,46 @@
             }
         }
     }
+
+    .galleryTabs{
+        margin-top: 138px;
+        padding: 64px;
+    
+    
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+          }
+    
+        .cards {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        
+        .card {
+            background-color: $accentColor;
+            color: $textColorSecondary;
+            padding: 1rem;
+            height: 4rem;
+            cursor: pointer;
+        }
+        
+        .content {
+            display: none;
+            margin-top: 20px;
+    
+            
+        }
+        
+        /* Add styling for the selected tab */
+        .card.active {
+            background-color: $secondaryColor;
+            color: $textColor;
+        }
+    } 
+
 }
 
 
