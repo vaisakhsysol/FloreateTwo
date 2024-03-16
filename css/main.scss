@@ -832,13 +832,15 @@
             font-size: map-get($FontSize, medium );
             font-weight: 700;
             color: $secondaryColor;
+            margin-top: 8px;
         }
         p{
             font-size: map-get($FontSize, regular );
-
+            margin-top: 8px;
         }
 
         .inputFields{
+            margin-top: 16px;
             .names{
                 display: flex;
                 gap: 10px;
@@ -984,6 +986,306 @@
         color: $textColor;
     }
 } 
+
+.bigHeading{
+    background-color: $accentColor;
+    padding: 256px;
+    margin-top: -45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 50px 50px;
+
+
+    h2{
+        text-align: center;
+        font-size: map-get($FontSize, headingBig );
+        font-family: "Fira Sans Condensed", sans-serif;
+        color: $textColor;
+    }
+
+    p{
+        text-align: center;
+        font-size: map-get($FontSize, regular );
+        font-family: "Fira Sans Condensed", sans-serif;
+        color: $textColor;
+        margin-top: 16px;
+    }
+
+    .pillContainer{
+        border: 2px solid $primaryColor;
+        width: 40px;
+        height: 70px;
+        border-radius: 50px;
+        background-color: $secondaryColor;
+        position: relative;
+        top: 290px;
+        display: flex;
+        justify-content: center;
+
+        .pill{
+            width: 32px;
+            height: 32px;
+            background-color: $accentColor;
+            border: 1px solid $primaryColor;
+            border-radius: 50px;
+            margin-top: 3px;
+
+
+
+        }
+
+
+    }
+
+}
+
+.acadamicDetailsContainer{
+    padding:64px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Fira Sans Condensed", sans-serif;
+
+
+    .academicDetailsLeft{
+        padding: 10px;
+        width: 50%;
+
+        .top{
+            background-color: $accentColor;
+
+            h6{
+                background-color: $primaryColor;
+                font-weight: 600;
+                color: $textColor;
+                font-size: map-get($FontSize, regular );
+            
+            }
+
+            .syllabusContainer{
+                margin-top: 16px;
+
+                // border-radius: 55px;
+                background-color: $accentColor;
+                padding: 32px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+
+                .syllabusButton{
+                    cursor: pointer;
+                    background-color: $secondaryColor;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    color: $primaryColor;
+                    align-items: center;
+                    margin-bottom: 16px;
+
+                    .download{
+                        margin-top: 4px;
+                        display: flex;
+                        align-items: center;
+
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .bottom{
+            margin-top: 16px;
+
+            h6{
+                font-weight: 600;
+                color: $textColor;
+                margin-top: 32px;
+                font-size: map-get($FontSize, regular );
+            }
+            .calendar{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                background-color: $accentColor;
+
+
+            }
+
+            .header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                
+
+                button{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background-color: $primaryColor;
+                cursor: pointer;
+                border: none;
+                width: 45px;
+                height: 45px;
+
+                p{
+                    margin-bottom: 0;
+                }
+                }
+            }
+
+            .days{
+                display: grid;
+                grid-template-columns: repeat(7,1fr);
+            }
+
+            .day{
+                text-align: center;
+                padding: 5px;
+                color: $textColor;
+
+
+            }
+
+            .dates{
+                display: grid;
+                grid-template-columns: repeat(7,1fr);
+
+            }
+
+            .date{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 10px;
+                margin: auto;
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                transition: 0.2s;
+                border-radius: 25px;
+            }
+
+            .date:hover,.date.active{
+                background-color: $secondaryColor;
+                color: $primaryColor;
+                
+            }
+
+            .date.inactive{
+                color: rgb(181, 181, 181);
+            }
+
+            .date.inactive{
+                color: rgb(181, 181, 181);
+            }
+        }
+        // background-color: $accentColor;
+
+    }
+
+    .academicDetailsRight{
+        width: 50%;
+        text-align: left;
+        border-radius: 50px;
+
+        h6{
+            font-weight: 600;
+            color: $textColor;
+            font-size: map-get($FontSize, regular);
+            margin-bottom: 8px;
+        }
+
+        .academicDetails{
+            padding: 18px;
+            background-color: $accentColor;
+
+            p{
+                font-size: map-get($FontSize, small );
+            }
+
+            .tenthClass{
+                h6{
+                    margin-top: 16px;
+                }
+            }
+
+            .address{
+                font-weight: 700;
+                margin-top: 32px;
+                margin-bottom: 32px;
+            }
+
+            .register{
+                width: 100%;
+                background-color: $secondaryColor;
+                border-radius: 25px;
+                padding: 15px;
+                border: none;
+                color: $primaryColor;
+                font-family: "Fira Sans Condensed", sans-serif;
+
+            }
+        }
+    }
+
+
+}
+
+.facultyContainer{
+    padding: 0 64px;
+    font-family: "Fira Sans Condensed", sans-serif;
+
+    .facultyHeading{
+        h5{
+            width: 300px;
+            font-weight: 600;
+            color: $textColor;
+            font-size: map-get($FontSize, regular );
+
+        }
+        p{
+            font-size: map-get($FontSize, small );
+            margin-top: 16px;
+        }
+    }
+
+    .faculty{
+        margin-top: 64px;
+
+        .teachersContainer{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            .teacher{
+                margin-top: 16px;
+                
+                img{
+                    width: 200px;
+                    object-fit: cover;
+                    border-radius: 15px;
+                }
+                h5{
+                    margin-top: 16px;
+                }
+                p{
+                    font-size: map-get($FontSize, small);
+                }
+            }
+        }
+    }
+}
+
 
 .footerContainer{
 
@@ -2365,6 +2667,307 @@
         }
     }
     
+    .bigHeading{
+        background-color: $accentColor;
+        padding: 128px;
+        margin-top: -45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0 0 50px 50px;
+    
+    
+        h2{
+            text-align: center;
+            font-size: map-get($FontSize, headingBig );
+            font-family: "Fira Sans Condensed", sans-serif;
+            color: $textColor;
+        }
+    
+        p{
+            text-align: center;
+            font-size: map-get($FontSize, regular );
+            font-family: "Fira Sans Condensed", sans-serif;
+            color: $textColor;
+            margin-top: 16px;
+        }
+    
+        .pillContainer{
+            border: 2px solid $primaryColor;
+            width: 40px;
+            height: 70px;
+            border-radius: 50px;
+            background-color: $secondaryColor;
+            position: relative;
+            top: 150px;
+            display: flex;
+            justify-content: center;
+    
+            .pill{
+                width: 32px;
+                height: 32px;
+                background-color: $accentColor;
+                border: 1px solid $primaryColor;
+                border-radius: 50px;
+                margin-top: 3px;
+    
+    
+    
+            }
+    
+    
+        }
+    
+    }
+    
+    .acadamicDetailsContainer{
+        padding:64px;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+    
+        .academicDetailsLeft{
+            padding: 10px;
+            width: 50%;
+    
+            .top{
+                background-color: $accentColor;
+    
+                h6{
+                    background-color: $primaryColor;
+                    font-weight: 600;
+                    color: $textColor;
+                    font-size: map-get($FontSize, regular );
+                
+                }
+    
+                .syllabusContainer{
+                    margin-top: 16px;
+    
+                    // border-radius: 55px;
+                    background-color: $accentColor;
+                    padding: 32px;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    
+                    .syllabusButton{
+                        cursor: pointer;
+                        background-color: $secondaryColor;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: $primaryColor;
+                        align-items: center;
+                        margin-bottom: 16px;
+    
+                        .download{
+                            margin-top: 4px;
+                            display: flex;
+                            align-items: center;
+    
+                            p{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                
+            }
+    
+            .bottom{
+                margin-top: 16px;
+    
+                h6{
+                    font-weight: 600;
+                    color: $textColor;
+                    margin-top: 32px;
+                    font-size: map-get($FontSize, regular );
+                }
+                .calendar{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                    background-color: $accentColor;
+    
+    
+                }
+    
+                .header{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+                    
+    
+                    button{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: $primaryColor;
+                    cursor: pointer;
+                    border: none;
+                    width: 45px;
+                    height: 45px;
+    
+                    p{
+                        margin-bottom: 0;
+                    }
+                    }
+                }
+    
+                .days{
+                    display: grid;
+                    grid-template-columns: repeat(7,1fr);
+                }
+    
+                .day{
+                    text-align: center;
+                    padding: 5px;
+                    color: $textColor;
+    
+    
+                }
+    
+                .dates{
+                    display: grid;
+                    grid-template-columns: repeat(7,1fr);
+    
+                }
+    
+                .date{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 10px;
+                    margin: auto;
+                    cursor: pointer;
+                    width: 40px;
+                    height: 40px;
+                    transition: 0.2s;
+                    border-radius: 25px;
+                }
+    
+                .date:hover,.date.active{
+                    background-color: $secondaryColor;
+                    color: $primaryColor;
+                    
+                }
+    
+                .date.inactive{
+                    color: rgb(181, 181, 181);
+                }
+    
+                .date.inactive{
+                    color: rgb(181, 181, 181);
+                }
+            }
+            // background-color: $accentColor;
+    
+        }
+    
+        .academicDetailsRight{
+            width: 50%;
+            text-align: left;
+            border-radius: 50px;
+    
+            h6{
+                font-weight: 600;
+                color: $textColor;
+                font-size: map-get($FontSize, regular);
+                margin-bottom: 8px;
+            }
+    
+            .academicDetails{
+                padding: 18px;
+                background-color: $accentColor;
+    
+                p{
+                    font-size: map-get($FontSize, small );
+                }
+    
+                .tenthClass{
+                    h6{
+                        margin-top: 16px;
+                    }
+                }
+    
+                .address{
+                    font-weight: 700;
+                    margin-top: 32px;
+                    margin-bottom: 32px;
+                }
+    
+                .register{
+                    width: 100%;
+                    background-color: $secondaryColor;
+                    border-radius: 25px;
+                    padding: 15px;
+                    border: none;
+                    color: $primaryColor;
+                    font-family: "Fira Sans Condensed", sans-serif;
+    
+                }
+            }
+        }
+    
+    
+    }
+    
+    .facultyContainer{
+        padding: 0 64px;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+        .facultyHeading{
+            h5{
+                width: 300px;
+                font-weight: 600;
+                color: $textColor;
+                font-size: map-get($FontSize, regular );
+    
+            }
+            p{
+                font-size: map-get($FontSize, small );
+                margin-top: 16px;
+            }
+        }
+    
+        .faculty{
+            margin-top: 64px;
+    
+            .teachersContainer{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+                gap: 16px;
+                .teacher{
+                    margin-top: 16px;
+                    margin-left: 16px;
+                    
+                    img{
+                        width: 200px;
+                        object-fit: cover;
+                    }
+                    h5{
+                        margin-top: 16px;
+                    }
+                    p{
+                        font-size: map-get($FontSize, small);
+                    }
+                }
+            }
+        }
+    }
+    
+    
+
 }
 
 
@@ -3133,6 +3736,307 @@
             color: $textColor;
         }
     } 
+
+    .bigHeading{
+        background-color: $accentColor;
+        padding: 64px;
+        margin-top: -45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0 0 50px 50px;
+    
+    
+        h2{
+            text-align: center;
+            font-size: map-get($FontSize, big );
+            font-family: "Fira Sans Condensed", sans-serif;
+            color: $textColor;
+        }
+    
+        p{
+            text-align: center;
+            font-size: map-get($FontSize, small );
+            font-family: "Fira Sans Condensed", sans-serif;
+            color: $textColor;
+            margin-top: 16px;
+        }
+    
+        .pillContainer{
+            border: 2px solid $primaryColor;
+            width: 30px;
+            height: 60px;
+            border-radius: 50px;
+            background-color: $secondaryColor;
+            position: relative;
+            top: 90px;
+            display: flex;
+            justify-content: center;
+    
+            .pill{
+                width: 20px;
+                height: 20px;
+                background-color: $accentColor;
+                border: 1px solid $primaryColor;
+                border-radius: 50px;
+                margin-top: 3px;
+    
+    
+    
+            }
+    
+    
+        }
+    
+    }
+    
+    .acadamicDetailsContainer{
+        padding:16px;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Fira Sans Condensed", sans-serif;
+        margin-top: 32px;
+    
+    
+        .academicDetailsLeft{
+            padding: 10px;
+            width: 50%;
+    
+            .top{
+                background-color: $accentColor;
+    
+                h6{
+                    background-color: $primaryColor;
+                    font-weight: 600;
+                    color: $textColor;
+                    font-size: map-get($FontSize, regular );
+                
+                }
+    
+                .syllabusContainer{
+                    margin-top: 16px;
+    
+                    // border-radius: 55px;
+                    background-color: $accentColor;
+                    padding: 32px;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    
+                    .syllabusButton{
+                        cursor: pointer;
+                        background-color: $secondaryColor;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: $primaryColor;
+                        align-items: center;
+                        margin-bottom: 16px;
+    
+                        .download{
+                            margin-top: 4px;
+                            display: flex;
+                            align-items: center;
+    
+                            p{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                
+            }
+    
+            .bottom{
+                margin-top: 16px;
+    
+                h6{
+                    font-weight: 600;
+                    color: $textColor;
+                    margin-top: 32px;
+                    font-size: map-get($FontSize, regular );
+                }
+                .calendar{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                    background-color: $accentColor;
+    
+    
+                }
+    
+                .header{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+                    
+    
+                    button{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: $primaryColor;
+                    cursor: pointer;
+                    border: none;
+                    width: 45px;
+                    height: 45px;
+    
+                    p{
+                        margin-bottom: 0;
+                    }
+                    }
+                }
+    
+                .days{
+                    display: grid;
+                    grid-template-columns: repeat(7,1fr);
+                }
+    
+                .day{
+                    text-align: center;
+                    padding: 5px;
+                    color: $textColor;
+    
+    
+                }
+    
+                .dates{
+                    display: grid;
+                    grid-template-columns: repeat(7,1fr);
+    
+                }
+    
+                .date{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 10px;
+                    margin: auto;
+                    cursor: pointer;
+                    width: 40px;
+                    height: 40px;
+                    transition: 0.2s;
+                    border-radius: 25px;
+                }
+    
+                .date:hover,.date.active{
+                    background-color: $secondaryColor;
+                    color: $primaryColor;
+                    
+                }
+    
+                .date.inactive{
+                    color: rgb(181, 181, 181);
+                }
+    
+                .date.inactive{
+                    color: rgb(181, 181, 181);
+                }
+            }
+            // background-color: $accentColor;
+    
+        }
+    
+        .academicDetailsRight{
+            width: 50%;
+            text-align: left;
+            border-radius: 50px;
+    
+            h6{
+                font-weight: 600;
+                color: $textColor;
+                font-size: map-get($FontSize, regular);
+                margin-bottom: 8px;
+            }
+    
+            .academicDetails{
+                padding: 18px;
+                background-color: $accentColor;
+    
+                p{
+                    font-size: map-get($FontSize, small );
+                }
+    
+                .tenthClass{
+                    h6{
+                        margin-top: 16px;
+                    }
+                }
+    
+                .address{
+                    font-weight: 700;
+                    margin-top: 32px;
+                    margin-bottom: 32px;
+                }
+    
+                .register{
+                    width: 100%;
+                    background-color: $secondaryColor;
+                    border-radius: 25px;
+                    padding: 15px;
+                    border: none;
+                    color: $primaryColor;
+                    font-family: "Fira Sans Condensed", sans-serif;
+    
+                }
+            }
+        }
+    
+    
+    }
+    
+    .facultyContainer{
+        padding: 0 64px;
+        font-family: "Fira Sans Condensed", sans-serif;
+        margin-top: 32px;
+    
+        .facultyHeading{
+            h5{
+                width: 300px;
+                font-weight: 600;
+                color: $textColor;
+                font-size: map-get($FontSize, regular );
+    
+            }
+            p{
+                font-size: map-get($FontSize, small );
+                margin-top: 16px;
+            }
+        }
+    
+        .faculty{
+            margin-top: 64px;
+    
+            .teachersContainer{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+                gap: 16px;
+                .teacher{
+                    margin-top: 16px;
+                    margin-left: 16px;
+                    
+                    img{
+                        width: 200px;
+                        object-fit: cover;
+                    }
+                    h5{
+                        margin-top: 16px;
+                    }
+                    p{
+                        font-size: map-get($FontSize, small);
+                    }
+                }
+            }
+        }
+    }
     
 }
 
@@ -4123,6 +5027,312 @@
             color: $textColor;
         }
     } 
+
+    .bigHeading{
+        background-color: $accentColor;
+        padding: 32px;
+        margin-top: -45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0 0 50px 50px;
+    
+    
+        h2{
+            text-align: center;
+            font-size: map-get($FontSize, big );
+            font-family: "Fira Sans Condensed", sans-serif;
+            color: $textColor;
+            margin-top: 24px;
+        }
+    
+        p{
+            text-align: center;
+            font-size: map-get($FontSize, small );
+            font-family: "Fira Sans Condensed", sans-serif;
+            color: $textColor;
+            margin-top: 16px;
+        }
+    
+        .pillContainer{
+            border: 2px solid $primaryColor;
+            width: 30px;
+            height: 60px;
+            border-radius: 50px;
+            background-color: $secondaryColor;
+            position: relative;
+            top: 60px;
+            display: flex;
+            justify-content: center;
+    
+            .pill{
+                width: 20px;
+                height: 20px;
+                background-color: $accentColor;
+                border: 1px solid $primaryColor;
+                border-radius: 50px;
+                margin-top: 3px;
+    
+    
+    
+            }
+    
+    
+        }
+    
+    }
+    
+    .acadamicDetailsContainer{
+        padding:16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: "Fira Sans Condensed", sans-serif;
+        margin-top: 32px;
+    
+    
+        .academicDetailsLeft{
+            padding: 10px;
+            width: 100%;
+    
+            .top{
+                background-color: $accentColor;
+    
+                h6{
+                    background-color: $primaryColor;
+                    font-weight: 600;
+                    color: $textColor;
+                    font-size: map-get($FontSize, regular );
+                
+                }
+    
+                .syllabusContainer{
+                    margin-top: 16px;
+    
+                    // border-radius: 55px;
+                    background-color: $accentColor;
+                    padding: 32px;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    
+                    .syllabusButton{
+                        cursor: pointer;
+                        background-color: $secondaryColor;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: $primaryColor;
+                        align-items: center;
+                        margin-bottom: 16px;
+    
+                        .download{
+                            margin-top: 4px;
+                            display: flex;
+                            align-items: center;
+    
+                            p{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                
+            }
+    
+            .bottom{
+                margin-top: 16px;
+    
+                h6{
+                    font-weight: 600;
+                    color: $textColor;
+                    margin-top: 32px;
+                    font-size: map-get($FontSize, regular );
+                }
+                .calendar{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                    background-color: $accentColor;
+    
+    
+                }
+    
+                .header{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+                    
+    
+                    button{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: $primaryColor;
+                    cursor: pointer;
+                    border: none;
+                    width: 45px;
+                    height: 45px;
+    
+                    p{
+                        margin-bottom: 0;
+                    }
+                    }
+                }
+    
+                .days{
+                    display: grid;
+                    grid-template-columns: repeat(7,1fr);
+                }
+    
+                .day{
+                    text-align: center;
+                    padding: 5px;
+                    color: $textColor;
+    
+    
+                }
+    
+                .dates{
+                    display: grid;
+                    grid-template-columns: repeat(7,1fr);
+    
+                }
+    
+                .date{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 10px;
+                    margin: auto;
+                    cursor: pointer;
+                    width: 40px;
+                    height: 40px;
+                    transition: 0.2s;
+                    border-radius: 25px;
+                }
+    
+                .date:hover,.date.active{
+                    background-color: $secondaryColor;
+                    color: $primaryColor;
+                    
+                }
+    
+                .date.inactive{
+                    color: rgb(181, 181, 181);
+                }
+    
+                .date.inactive{
+                    color: rgb(181, 181, 181);
+                }
+            }
+            // background-color: $accentColor;
+    
+        }
+    
+        .academicDetailsRight{
+            width: 100%;
+            text-align: left;
+            border-radius: 50px;
+            margin-top: 24px;
+    
+            h6{
+                font-weight: 600;
+                color: $textColor;
+                font-size: map-get($FontSize, regular);
+                margin-bottom: 8px;
+            }
+    
+            .academicDetails{
+                padding: 18px;
+                background-color: $accentColor;
+    
+                p{
+                    font-size: map-get($FontSize, small );
+                }
+    
+                .tenthClass{
+                    h6{
+                        margin-top: 16px;
+                    }
+                }
+    
+                .address{
+                    font-weight: 700;
+                    margin-top: 32px;
+                    margin-bottom: 32px;
+                }
+    
+                .register{
+                    width: 100%;
+                    background-color: $secondaryColor;
+                    border-radius: 25px;
+                    padding: 15px;
+                    border: none;
+                    color: $primaryColor;
+                    font-family: "Fira Sans Condensed", sans-serif;
+    
+                }
+            }
+        }
+    
+    
+    }
+    
+    .facultyContainer{
+        padding: 0 16px;
+        font-family: "Fira Sans Condensed", sans-serif;
+        margin-top: 32px;
+    
+        .facultyHeading{
+            h5{
+                width: 300px;
+                font-weight: 600;
+                color: $textColor;
+                font-size: map-get($FontSize, regular );
+    
+            }
+            p{
+                font-size: map-get($FontSize, small );
+                margin-top: 16px;
+                line-height: 24px;
+            }
+        }
+    
+        .faculty{
+            margin-top: 64px;
+    
+            .teachersContainer{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+                gap: 16px;
+                .teacher{
+                    margin-top: 16px;
+                    // margin-left: 16px;
+                    
+                    img{
+                        width: 200px;
+                        object-fit: cover;
+                    }
+                    h5{
+                        margin-top: 16px;
+                    }
+                    p{
+                        font-size: map-get($FontSize, small);
+                    }
+                }
+            }
+        }
+    }
+    
     
 }
 
@@ -5124,6 +6334,311 @@
             color: $textColor;
         }
     } 
+
+    .bigHeading{
+        background-color: $accentColor;
+        padding: 32px;
+        margin-top: -55px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0 0 50px 50px;
+    
+    
+        h2{
+            text-align: center;
+            font-size: map-get($FontSize, big );
+            font-family: "Fira Sans Condensed", sans-serif;
+            color: $textColor;
+            margin-top: 24px;
+        }
+    
+        p{
+            text-align: center;
+            font-size: map-get($FontSize, small );
+            font-family: "Fira Sans Condensed", sans-serif;
+            color: $textColor;
+            margin-top: 16px;
+        }
+    
+        .pillContainer{
+            border: 2px solid $primaryColor;
+            width: 30px;
+            height: 60px;
+            border-radius: 50px;
+            background-color: $secondaryColor;
+            position: relative;
+            top: 60px;
+            display: flex;
+            justify-content: center;
+    
+            .pill{
+                width: 20px;
+                height: 20px;
+                background-color: $accentColor;
+                border: 1px solid $primaryColor;
+                border-radius: 50px;
+                margin-top: 3px;
+    
+    
+    
+            }
+    
+    
+        }
+    
+    }
+    
+    .acadamicDetailsContainer{
+        padding:8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: "Fira Sans Condensed", sans-serif;
+        margin-top: 32px;
+    
+    
+        .academicDetailsLeft{
+            padding: 10px;
+            width: 100%;
+    
+            .top{
+                background-color: $accentColor;
+    
+                h6{
+                    background-color: $primaryColor;
+                    font-weight: 600;
+                    color: $textColor;
+                    font-size: map-get($FontSize, regular );
+                
+                }
+    
+                .syllabusContainer{
+                    margin-top: 16px;
+    
+                    // border-radius: 55px;
+                    background-color: $accentColor;
+                    padding: 32px;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    
+                    .syllabusButton{
+                        cursor: pointer;
+                        background-color: $secondaryColor;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: $primaryColor;
+                        align-items: center;
+                        margin-bottom: 16px;
+    
+                        .download{
+                            margin-top: 4px;
+                            display: flex;
+                            align-items: center;
+    
+                            p{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                
+            }
+    
+            .bottom{
+                margin-top: 16px;
+    
+                h6{
+                    font-weight: 600;
+                    color: $textColor;
+                    margin-top: 32px;
+                    font-size: map-get($FontSize, regular );
+                }
+                .calendar{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                    background-color: $accentColor;
+    
+    
+                }
+    
+                .header{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+                    
+    
+                    button{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: $primaryColor;
+                    cursor: pointer;
+                    border: none;
+                    width: 45px;
+                    height: 45px;
+    
+                    p{
+                        margin-bottom: 0;
+                    }
+                    }
+                }
+    
+                .days{
+                    display: grid;
+                    grid-template-columns: repeat(7,1fr);
+                }
+    
+                .day{
+                    text-align: center;
+                    padding: 5px;
+                    color: $textColor;
+    
+    
+                }
+    
+                .dates{
+                    display: grid;
+                    grid-template-columns: repeat(7,1fr);
+    
+                }
+    
+                .date{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 10px;
+                    margin: auto;
+                    cursor: pointer;
+                    width: 40px;
+                    height: 40px;
+                    transition: 0.2s;
+                    border-radius: 25px;
+                }
+    
+                .date:hover,.date.active{
+                    background-color: $secondaryColor;
+                    color: $primaryColor;
+                    
+                }
+    
+                .date.inactive{
+                    color: rgb(181, 181, 181);
+                }
+    
+                .date.inactive{
+                    color: rgb(181, 181, 181);
+                }
+            }
+            // background-color: $accentColor;
+    
+        }
+    
+        .academicDetailsRight{
+            width: 100%;
+            text-align: left;
+            border-radius: 50px;
+            margin-top: 24px;
+    
+            h6{
+                font-weight: 600;
+                color: $textColor;
+                font-size: map-get($FontSize, regular);
+                margin-bottom: 8px;
+            }
+    
+            .academicDetails{
+                padding: 8px;
+                background-color: $accentColor;
+    
+                p{
+                    font-size: map-get($FontSize, small );
+                }
+    
+                .tenthClass{
+                    h6{
+                        margin-top: 16px;
+                    }
+                }
+    
+                .address{
+                    font-weight: 700;
+                    margin-top: 32px;
+                    margin-bottom: 32px;
+                }
+    
+                .register{
+                    width: 100%;
+                    background-color: $secondaryColor;
+                    border-radius: 25px;
+                    padding: 15px;
+                    border: none;
+                    color: $primaryColor;
+                    font-family: "Fira Sans Condensed", sans-serif;
+    
+                }
+            }
+        }
+    
+    
+    }
+    
+    .facultyContainer{
+        padding: 0 16px;
+        font-family: "Fira Sans Condensed", sans-serif;
+        margin-top: 32px;
+    
+        .facultyHeading{
+            h5{
+                width: 300px;
+                font-weight: 600;
+                color: $textColor;
+                font-size: map-get($FontSize, regular );
+    
+            }
+            p{
+                font-size: map-get($FontSize, small );
+                margin-top: 16px;
+                line-height: 24px;
+            }
+        }
+    
+        .faculty{
+            margin-top: 64px;
+    
+            .teachersContainer{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+                gap: 16px;
+                .teacher{
+                    margin-top: 16px;
+                    // margin-left: 16px;
+                    
+                    img{
+                        width: 200px;
+                        object-fit: cover;
+                    }
+                    h5{
+                        margin-top: 16px;
+                    }
+                    p{
+                        font-size: map-get($FontSize, small);
+                    }
+                }
+            }
+        }
+    }
 
 }
 
