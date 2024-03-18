@@ -1434,6 +1434,371 @@
     }
 }
 
+.bhSection{
+    border-radius: 0 0 50px 50px;
+    z-index: 22;
+}
+.aboutContainer{
+    .about{
+        padding: 128px;
+        // background-color: $secondaryColor;
+        z-index: -22;
+        display: flex;
+
+    }
+
+    .about:nth-child(1){
+    font-family: "Fira Sans Condensed", sans-serif;
+
+        background-color: $secondaryColor;
+
+        .aboutLeft{
+            width: 60%;
+
+            h2{
+                color: $primaryColor;
+                font-size: map-get($FontSize, veryBig );
+            }
+
+            p{
+                color: $primaryColor;
+                margin-top: 16px;
+                font-size: map-get($FontSize, regular);
+                margin-top: 64px;
+                line-height: 26px;
+                width: 80%;
+            }
+
+            .infoCircle{
+                margin-top: 64px;
+                display: inline-flex;
+                align-items: center;
+                
+                .circle{
+                    min-width: 120px;
+                    min-height: 120px;
+                    width: 120px;
+                    height: 120px;
+                    padding: 10px;
+                    background-color: $accentColor;
+                    border-radius: 180px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+
+                    p{
+                        color: $textColor;
+                        font-weight: 500;
+                        margin-top: 0;
+
+                    }
+                }
+
+                .blurb{
+                    p{
+                        margin-left: 24px;
+                        margin-top: 0;
+                        width: 70%;
+                        font-size: map-get($FontSize, small );
+                    }
+                }
+            }
+        }
+
+        .aboutRight{
+            width: 40%;
+            
+
+            img{
+                width: 100%;
+                border-radius: 25px;
+            }
+
+            img:nth-child(1){
+                width: 30%;
+                position: relative;
+                top: 200px;
+                object-fit: cover;
+                height: 250px;
+            }
+
+            img:nth-child(2){
+                width: 50%;
+                object-fit: cover;
+                height: 250px;
+
+            }
+        }
+    }
+
+    .about:nth-child(2){
+        background-color: $textColor;
+        // margin-top: -64px;
+        font-family: "Fira Sans Condensed", sans-serif;
+
+
+        .aboutLeft{
+            width: 60%;
+
+            h2{
+                color: $primaryColor;
+                font-size: map-get($FontSize, veryBig );
+            }
+
+            p{
+                color: $primaryColor;
+                margin-top: 16px;
+                font-size: map-get($FontSize, regular);
+                margin-top: 64px;
+                line-height: 26px;
+                width: 80%;
+            }
+
+            .infoCircle{
+                margin-top: 64px;
+                display: inline-flex;
+                align-items: center;
+                
+                .circle{
+                    min-width: 120px;
+                    min-height: 120px;
+                    width: 120px;
+                    height: 120px;
+                    padding: 10px;
+                    background-color: $accentColor;
+                    border-radius: 180px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+
+                    p{
+                        color: $textColor;
+                        font-weight: 500;
+                        margin-top: 0;
+
+                    }
+                }
+
+                .blurb{
+                    p{
+                        margin-left: 24px;
+                        margin-top: 0;
+                        width: 70%;
+                        font-size: map-get($FontSize, small );
+                    }
+                }
+            }
+        }
+
+        .aboutRight{
+            width: 40%;
+            
+
+            img{
+                width: 100%;
+                border-radius: 25px;
+            }
+
+            img:nth-child(1){
+                width: 30%;
+                position: relative;
+                top: 200px;
+                object-fit: cover;
+                height: 250px;
+            }
+
+            img:nth-child(2){
+                width: 50%;
+                object-fit: cover;
+                height: 250px;
+
+            }
+        }
+
+    }
+
+    .about:nth-child(3){
+        background-color: $accentColor;
+        // margin-top: -64px;
+        font-family: "Fira Sans Condensed", sans-serif;
+
+
+        .aboutLeft{
+            width: 60%;
+
+            h2{
+                color: $textColor;
+                font-size: map-get($FontSize, veryBig );
+            }
+
+            p{
+                color: $textColor;
+                margin-top: 16px;
+                font-size: map-get($FontSize, regular);
+                margin-top: 64px;
+                line-height: 26px;
+                width: 80%;
+            }
+
+            .infoCircle{
+                margin-top: 64px;
+                display: inline-flex;
+                align-items: center;
+                
+                .circle{
+                    min-width: 120px;
+                    min-height: 120px;
+                    width: 120px;
+                    height: 120px;
+                    padding: 10px;
+                    background-color: $textColor;
+                    border-radius: 180px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+
+                    p{
+                        color: $accentColor;
+                        font-weight: 500;
+                        margin-top: 0;
+
+                    }
+                }
+
+                .blurb{
+                    p{
+                        margin-left: 24px;
+                        margin-top: 0;
+                        width: 70%;
+                        font-size: map-get($FontSize, small );
+                    }
+                }
+            }
+        }
+
+        .aboutRight{
+            width: 40%;
+            
+
+            img{
+                width: 100%;
+                border-radius: 25px;
+            }
+
+            img:nth-child(1){
+                width: 30%;
+                position: relative;
+                top: 200px;
+                object-fit: cover;
+                height: 250px;
+            }
+
+            img:nth-child(2){
+                width: 50%;
+                object-fit: cover;
+                height: 250px;
+
+            }
+        }
+    }
+
+    .about:nth-child(4){
+        background-color: $secondaryColor;
+        // margin-top: -64px;
+        font-family: "Fira Sans Condensed", sans-serif;
+
+
+        .aboutLeft{
+            width: 60%;
+
+            h2{
+                color: $accentColor;
+                font-size: map-get($FontSize, veryBig );
+            }
+
+            p{
+                color: $accentColor;
+                margin-top: 16px;
+                font-size: map-get($FontSize, regular);
+                margin-top: 64px;
+                line-height: 26px;
+                width: 80%;
+            }
+
+            .infoCircle{
+                margin-top: 64px;
+                display: inline-flex;
+                align-items: center;
+                
+                .circle{
+                    min-width: 120px;
+                    min-height: 120px;
+                    width: 120px;
+                    height: 120px;
+                    padding: 10px;
+                    background-color: $textColor;
+                    border-radius: 180px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+
+                    p{
+                        color: $accentColor;
+                        font-weight: 500;
+                        margin-top: 0;
+
+                    }
+                }
+
+                .blurb{
+                    p{
+                        margin-left: 24px;
+                        margin-top: 0;
+                        width: 70%;
+                        font-size: map-get($FontSize, small );
+                    }
+                }
+            }
+        }
+
+        .aboutRight{
+            width: 40%;
+            
+
+            img{
+                width: 100%;
+                border-radius: 25px;
+            }
+
+            img:nth-child(1){
+                width: 30%;
+                position: relative;
+                top: 200px;
+                object-fit: cover;
+                height: 250px;
+            }
+
+            img:nth-child(2){
+                width: 50%;
+                object-fit: cover;
+                height: 250px;
+
+            }
+        }
+    }
+
+    
+}
+
+
 .footerContainer{
 
     width: 100%;
