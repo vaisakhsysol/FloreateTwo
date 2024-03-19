@@ -1438,17 +1438,21 @@
     border-radius: 0 0 50px 50px;
     z-index: 22;
 }
-.aboutContainer{
+.facilContainer{
+    background-color: $accentColor;
     .about{
         padding: 128px;
         // background-color: $secondaryColor;
         z-index: -22;
         display: flex;
+        border-radius:50px 50px;
+        margin-bottom: 64px;
+        // position: absolute;
 
     }
 
     .about:nth-child(1){
-    font-family: "Fira Sans Condensed", sans-serif;
+         font-family: "Fira Sans Condensed", sans-serif;
 
         background-color: $secondaryColor;
 
@@ -1798,6 +1802,113 @@
     
 }
 
+.sportsContainer{
+    h2{
+        text-align: center;
+        padding: 0 128px;
+         font-family: "Fira Sans Condensed", sans-serif;
+         font-size: map-get($FontSize, veryBig);
+
+    }
+
+    .sports{
+        padding: 0 128px;
+        margin-top: 64px;
+        font-family: "Fira Sans Condensed", sans-serif;
+
+
+        .logoAndHeading{
+            display: flex;
+            align-items: center;
+            p{
+                font-size: map-get($FontSize, veryBig);
+                font-weight: 500;
+                margin-left: 32px;
+                color: $textColor;
+            }
+        }
+
+        .subHeading{
+                font-size: map-get($FontSize, medium);
+                // font-weight: 500;
+                // margin-left: 32px;
+                color: $textColor;
+                margin-top: 32px;
+
+                p{
+                    width: 1200px;
+                    line-height: 28px;
+                    letter-spacing: 0.3px;
+                }
+        }
+
+        
+
+        .blurb{
+            margin-top: 32px;
+            p{
+                font-size: map-get($FontSize, regular);
+                width: 50%;
+                line-height: 28px;
+                letter-spacing: 0.3px;
+
+            }
+        }
+
+    }
+
+    .sports:nth-child(even){
+        // background-color: #313131;
+        .images{
+            display: flex;
+            gap: 16px;
+            margin-top: 32px;
+            height: 250px;
+
+            img:nth-child(1){
+                width: 60%;
+            object-fit: cover;
+            border-radius: 150px 150px 0 0;
+
+
+            }
+
+            img:nth-child(2){
+                width: 40%;
+            object-fit: cover;
+            border-radius: 0 0 150px 150px;
+
+            }
+        }
+    }
+
+    .sports:nth-child(odd){
+        // background-color: #f15c5c;
+        .images{
+            display: flex;
+            gap: 16px;
+            margin-top: 32px;
+            height: 250px;
+
+            img:nth-child(1){
+                width: 60%;
+            object-fit: cover;
+            border-radius: 0 0 150px 150px;
+
+
+
+            }
+
+            img:nth-child(2){
+                width: 40%;
+            object-fit: cover;
+            border-radius: 150px 150px 0 0;
+
+
+            }
+        }
+    }
+}
 
 .footerContainer{
 
@@ -3779,6 +3890,130 @@
             }
         }
     }
+
+    .footerContainer{
+
+        width: 100%;
+        font-family: "Hind Madurai", sans-serif;
+        border-radius: 50px;
+    
+        .footerContainerTop{
+        border-radius: 50px 50px 0 0;
+    
+        padding: 32px;
+        margin-top: 128px;
+        background-color: $secondaryColor;
+        display: flex;
+        justify-content: space-around;
+        color: $primaryColor;
+    
+        .footerIconandText{
+            width: 350px;
+    
+            // img{
+    
+            // }
+    
+            p{
+                margin-top: 16px;
+                font-size: map-get($FontSize, vsmall );
+                line-height: 20px;
+            }
+        }
+    
+        .footerLinkSectionOne{
+    
+            p{
+                font-family: 800;
+                font-size: map-get($FontSize, regular );
+            }
+            ul{
+                padding: 0;
+            }
+            li{
+                list-style: none;
+                cursor: pointer;
+                margin-top: 8px;
+                font-size: map-get($FontSize, vsmall );
+    
+                &:hover{
+                    list-style: disc;
+                    text-decoration: underline;
+                    transition: all 0.5s ease-in;
+                }
+            }
+        }
+    
+        
+        .addressAndSocial{
+            width: 400px;
+            .footerAddress{
+                font-size: map-get($FontSize, small);
+                width: 80%;
+            }
+            .footerAdderessLoc{
+                font-size: map-get($FontSize, vsmall );
+                width: 50%;
+            }
+            .socialMediaContainer{
+                margin-top: 8px;
+                display: flex;
+                list-style: none;
+                // justify-content: space-around;
+                width: 70%;
+                padding: 0;
+    
+                li{
+                    padding: 0;
+                    // margin-left: 12px;
+                    margin-right: 8px;
+                    background-color: $primaryColor;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+    
+                    &:hover{
+                        scale: 1.1;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+            
+        }
+    
+       
+        }
+        
+        .footerContainerBottom{
+            background-color: $secondaryColor;
+            padding:0 32px;
+            // background-color: $primaryColor;
+    
+            .line{
+                background-color: $primaryColor;
+                padding: 1px;
+                margin-top: -16px;
+            }
+        }
+    
+        .credsContainer{
+            display: flex;
+            justify-content: space-between;
+    
+            .credLeft{
+                margin-top: 24px;
+                margin-bottom: 24px;
+                color: $primaryColor;
+                font-size: map-get($FontSize, vsmall );
+                font-weight: lighter;
+            }
+        }
+        
+    }
     
     
 
@@ -4999,6 +5234,133 @@
         .mobileTabsContainer{
             display: none;
         }
+    }
+
+    .footerContainer{
+
+        width: 100%;
+        font-family: "Hind Madurai", sans-serif;
+        border-radius: 50px;
+    
+        .footerContainerTop{
+        border-radius: 50px 50px 0 0;
+    
+        padding: 32px;
+        margin-top: 128px;
+        background-color: $secondaryColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: $primaryColor;
+    
+        .footerIconandText{
+            width: 350px;
+    
+            // img{
+    
+            // }
+    
+            p{
+                margin-top: 16px;
+                font-size: map-get($FontSize, vsmall );
+                line-height: 20px;
+            }
+        }
+    
+        .footerLinkSectionOne{
+            margin-top: 16px;
+    
+            p{
+                font-family: 800;
+                font-size: map-get($FontSize, regular );
+            }
+            ul{
+                padding: 0;
+            }
+            li{
+                list-style: none;
+                cursor: pointer;
+                margin-top: 8px;
+                font-size: map-get($FontSize, vsmall );
+    
+                &:hover{
+                    list-style: disc;
+                    text-decoration: underline;
+                    transition: all 0.5s ease-in;
+                }
+            }
+        }
+    
+        
+        .addressAndSocial{
+            width: 400px;
+            margin-top: 16px;
+            .footerAddress{
+                font-size: map-get($FontSize, small);
+                width: 80%;
+            }
+            .footerAdderessLoc{
+                font-size: map-get($FontSize, vsmall );
+                width: 50%;
+            }
+            .socialMediaContainer{
+                margin-top: 8px;
+                display: flex;
+                list-style: none;
+                // justify-content: space-around;
+                width: 70%;
+                padding: 0;
+    
+                li{
+                    padding: 0;
+                    // margin-left: 12px;
+                    margin-right: 8px;
+                    background-color: $primaryColor;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+    
+                    &:hover{
+                        scale: 1.1;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+            
+        }
+    
+       
+        }
+        
+        .footerContainerBottom{
+            background-color: $secondaryColor;
+            padding:0 32px;
+            // background-color: $primaryColor;
+    
+            .line{
+                background-color: $primaryColor;
+                padding: 1px;
+                margin-top: -16px;
+            }
+        }
+    
+        .credsContainer{
+            display: flex;
+            justify-content: space-between;
+    
+            .credLeft{
+                margin-top: 24px;
+                margin-bottom: 24px;
+                color: $primaryColor;
+                font-size: map-get($FontSize, vsmall );
+                font-weight: lighter;
+            }
+        }
+        
     }
     
 }
@@ -6458,6 +6820,133 @@
             }
     
         }
+    }
+
+    .footerContainer{
+
+        width: 100%;
+        font-family: "Hind Madurai", sans-serif;
+        border-radius: 50px;
+    
+        .footerContainerTop{
+        border-radius: 50px 50px 0 0;
+    
+        padding: 16px;
+        margin-top: 128px;
+        background-color: $secondaryColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: $primaryColor;
+    
+        .footerIconandText{
+            width: 350px;
+    
+            // img{
+    
+            // }
+    
+            p{
+                margin-top: 16px;
+                font-size: map-get($FontSize, vsmall );
+                line-height: 20px;
+            }
+        }
+    
+        .footerLinkSectionOne{
+            margin-top: 16px;
+    
+            p{
+                font-family: 800;
+                font-size: map-get($FontSize, regular );
+            }
+            ul{
+                padding: 0;
+            }
+            li{
+                list-style: none;
+                cursor: pointer;
+                margin-top: 8px;
+                font-size: map-get($FontSize, vsmall );
+    
+                &:hover{
+                    list-style: disc;
+                    text-decoration: underline;
+                    transition: all 0.5s ease-in;
+                }
+            }
+        }
+    
+        
+        .addressAndSocial{
+            width: 400px;
+            margin-top: 16px;
+            .footerAddress{
+                font-size: map-get($FontSize, small);
+                width: 80%;
+            }
+            .footerAdderessLoc{
+                font-size: map-get($FontSize, vsmall );
+                width: 50%;
+            }
+            .socialMediaContainer{
+                margin-top: 8px;
+                display: flex;
+                list-style: none;
+                // justify-content: space-around;
+                width: 70%;
+                padding: 0;
+    
+                li{
+                    padding: 0;
+                    // margin-left: 12px;
+                    margin-right: 8px;
+                    background-color: $primaryColor;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+    
+                    &:hover{
+                        scale: 1.1;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+            
+        }
+    
+       
+        }
+        
+        .footerContainerBottom{
+            background-color: $secondaryColor;
+            padding:0 16px;
+            // background-color: $primaryColor;
+    
+            .line{
+                background-color: $primaryColor;
+                padding: 1px;
+                margin-top: 0;
+            }
+        }
+    
+        .credsContainer{
+            display: flex;
+            justify-content: space-between;
+    
+            .credLeft{
+                margin-top: 24px;
+                margin-bottom: 24px;
+                color: $primaryColor;
+                font-size: map-get($FontSize, vsmall );
+                font-weight: lighter;
+            }
+        }
+        
     }
     
     
@@ -7929,6 +8418,133 @@
             }
     
         }
+    }
+
+    .footerContainer{
+
+        width: 100%;
+        font-family: "Hind Madurai", sans-serif;
+        border-radius: 50px;
+    
+        .footerContainerTop{
+        border-radius: 50px 50px 0 0;
+    
+        padding: 16px;
+        margin-top: 128px;
+        background-color: $secondaryColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: $primaryColor;
+    
+        .footerIconandText{
+            width: 350px;
+    
+            // img{
+    
+            // }
+    
+            p{
+                margin-top: 16px;
+                font-size: map-get($FontSize, vsmall );
+                line-height: 20px;
+            }
+        }
+    
+        .footerLinkSectionOne{
+            margin-top: 16px;
+    
+            p{
+                font-family: 800;
+                font-size: map-get($FontSize, regular );
+            }
+            ul{
+                padding: 0;
+            }
+            li{
+                list-style: none;
+                cursor: pointer;
+                margin-top: 8px;
+                font-size: map-get($FontSize, vsmall );
+    
+                &:hover{
+                    list-style: disc;
+                    text-decoration: underline;
+                    transition: all 0.5s ease-in;
+                }
+            }
+        }
+    
+        
+        .addressAndSocial{
+            width: 400px;
+            margin-top: 16px;
+            .footerAddress{
+                font-size: map-get($FontSize, small);
+                width: 80%;
+            }
+            .footerAdderessLoc{
+                font-size: map-get($FontSize, vsmall );
+                width: 50%;
+            }
+            .socialMediaContainer{
+                margin-top: 8px;
+                display: flex;
+                list-style: none;
+                // justify-content: space-around;
+                width: 70%;
+                padding: 0;
+    
+                li{
+                    padding: 0;
+                    // margin-left: 12px;
+                    margin-right: 8px;
+                    background-color: $primaryColor;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+    
+                    &:hover{
+                        scale: 1.1;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+            
+        }
+    
+       
+        }
+        
+        .footerContainerBottom{
+            background-color: $secondaryColor;
+            padding:0 16px;
+            // background-color: $primaryColor;
+    
+            .line{
+                background-color: $primaryColor;
+                padding: 1px;
+                margin-top: 0;
+            }
+        }
+    
+        .credsContainer{
+            display: flex;
+            justify-content: space-between;
+    
+            .credLeft{
+                margin-top: 24px;
+                margin-bottom: 24px;
+                color: $primaryColor;
+                font-size: map-get($FontSize, vsmall );
+                font-weight: lighter;
+            }
+        }
+        
     }
     
 
