@@ -1996,6 +1996,115 @@
     }
 }
 
+
+.aboutHero{
+    padding: 156px;
+    background-color: $accentColor;
+    margin-top: -64px;
+    height: 600px;
+    border-radius: 0 0 100px 0;
+
+    h2{
+        font-size: map-get($FontSize, headingBig );
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: $textColor;
+    width: 800px;
+    }
+
+    p{
+        font-size: map-get($FontSize, regular);
+        font-family: "Fira Sans Condensed", sans-serif;
+        color: $textColor;
+        width: 900px;
+        margin-top: 16px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .aboutHeroImg{
+        display: flex;
+        justify-content: space-between;
+        top: -400px;
+        // left: 60%;
+
+        .circle{
+            width: 120px;
+            height: 120px;
+            background-color: $secondaryColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 250px;
+            left: 1000px;
+            z-index: 200;
+            bottom: 30px;
+            position: relative;
+            animation: rotation 20s infinite;
+
+
+            @keyframes rotation {
+                50% {transform: rotate(360deg);}
+            }
+
+            img{
+                object-fit: contain;
+                width: 100px;
+            }
+        }
+        img{
+            width: 30%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 0 100px 0 0;
+            top: 0px;
+        position: relative;
+
+        }
+    }
+    
+}
+
+.aboutsAbout{
+    padding: 128px;
+    margin-top: 128px;
+    background-color: $primaryColor;
+    font-family: "Fira Sans Condensed", sans-serif;
+
+
+    p{
+    border: 0.5px solid $secondaryColor;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    border-radius: 50px;
+    opacity: 0.5;
+
+    }
+
+    .about{
+        p{
+            width: 100%;
+            border: none;
+            text-align: left;
+            opacity: 1;
+            line-height: 28px;
+            margin-top: 24px;
+            font-weight: 500;
+            color: $textColor;
+
+        }
+    }
+
+    .list{
+        margin-left: 48px;
+        line-height: 32px;
+        margin-top: 48px;
+        font-weight: 500;
+        color: $textColor;
+    }
+}
+
+
 .footerContainer{
 
     width: 100%;

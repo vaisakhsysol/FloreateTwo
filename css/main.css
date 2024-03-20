@@ -1565,6 +1565,99 @@
   border-radius: 150px 150px 0 0;
 }
 
+.aboutHero {
+  padding: 156px;
+  background-color: #F0F3BD;
+  margin-top: -64px;
+  height: 600px;
+  border-radius: 0 0 100px 0;
+}
+.aboutHero h2 {
+  font-size: 60px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  color: #023684;
+  width: 800px;
+}
+.aboutHero p {
+  font-size: 20px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  color: #023684;
+  width: 900px;
+  margin-top: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.aboutHero .aboutHeroImg {
+  display: flex;
+  justify-content: space-between;
+  top: -400px;
+}
+.aboutHero .aboutHeroImg .circle {
+  width: 120px;
+  height: 120px;
+  background-color: #006D77;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 250px;
+  left: 1000px;
+  z-index: 200;
+  bottom: 30px;
+  position: relative;
+  animation: rotation 20s infinite;
+}
+@keyframes rotation {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+.aboutHero .aboutHeroImg .circle img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100px;
+}
+.aboutHero .aboutHeroImg img {
+  width: 30%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 100px 0 0;
+  top: 0px;
+  position: relative;
+}
+
+.aboutsAbout {
+  padding: 128px;
+  margin-top: 128px;
+  background-color: #ffffff;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+.aboutsAbout p {
+  border: 0.5px solid #006D77;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  border-radius: 50px;
+  opacity: 0.5;
+}
+.aboutsAbout .about p {
+  width: 100%;
+  border: none;
+  text-align: left;
+  opacity: 1;
+  line-height: 28px;
+  margin-top: 24px;
+  font-weight: 500;
+  color: #023684;
+}
+.aboutsAbout .list {
+  margin-left: 48px;
+  line-height: 32px;
+  margin-top: 48px;
+  font-weight: 500;
+  color: #023684;
+}
+
 .footerContainer {
   width: 100%;
   font-family: "Hind Madurai", sans-serif;
