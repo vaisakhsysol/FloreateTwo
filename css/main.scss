@@ -2101,9 +2101,187 @@
         margin-top: 48px;
         font-weight: 500;
         color: $textColor;
+
+        ul{
+            li{
+                font-size: map-get($FontSize, regular);
+            }
+        }
     }
 }
+.otherAboutContainer{
+    background-color: $accentColor;
+    margin-top: 128px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    border-radius: 0 0 100px 0;
 
+    .principleMessage{
+        .image{
+            position: relative;
+            top: -100px;
+            img{
+                width: 30%;
+                border-radius: 0 100px 0 0;
+
+            }
+        }
+        .message{
+            padding: 128px ;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            margin-top: -128px;
+            color: $textColor;
+
+            
+            h2{
+                font-size: map-get($FontSize, headingBig);
+            }
+
+            p{
+                padding: 0 256px;
+                font-size: map-get($FontSize, regular );
+                margin-top: 32px;
+                line-height: 28px;
+                font-weight: 500;
+
+            }
+        }
+    }
+
+    .vision{
+        background-color: $secondaryColor;
+        padding: 128px;
+        border-radius: 100px 0 0 0 ;
+        display: flex;
+
+        .left{
+            .heading{
+                background-color: $primaryColor;
+                width: 10%;
+                text-align: center;
+                padding: 10px;
+                border-radius: 50px;
+                color: $secondaryColor;
+
+
+            }
+            .para{
+                margin-top: 32px;
+                width: 50%;
+                color: $primaryColor;
+                line-height: 28px;
+                font-size: map-get($FontSize, regular);
+
+
+            }
+
+            .list{
+                ul{
+                    margin-top: 32px;
+                    li{
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        color: $primaryColor;
+                        margin-top: 16px;
+                        p{
+                            margin-left: 16px;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .right{
+            // padding: 10px;
+            border-radius: 100px;
+            background-color: $accentColor;
+            height: 200px;
+            width: 200px;
+            min-width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            animation: rotation 5s infinite;
+
+            @keyframes rotation {
+                50% {transform: rotate(360deg);}
+            }
+        }
+
+    }
+
+    .mission{
+        background-color: $textColor;
+        padding: 128px;
+        border-radius: 0 0 100px 0;
+        display: flex;
+        gap: 256px;
+
+        .left{
+            .heading{
+                background-color: $primaryColor;
+                width: 10%;
+                text-align: center;
+                padding: 10px;
+                border-radius: 50px;
+                color: $secondaryColor;
+
+
+            }
+            .para{
+                margin-top: 32px;
+                width: 50%;
+                color: $primaryColor;
+                line-height: 28px;
+                font-size: map-get($FontSize, regular);
+
+
+            }
+
+            .list{
+                ul{
+                    margin-top: 32px;
+                    li{
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        color: $primaryColor;
+                        margin-top: 16px;
+                        p{
+                            margin-left: 16px;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .right{
+            // padding: 10px;
+            border-radius: 100px;
+            background-color: $accentColor;
+            height: 200px;
+            width: 200px;
+            min-width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            animation: rotation 5s infinite;
+
+            @keyframes rotation {
+                50% {transform: rotate(360deg);}
+            }
+        }
+
+    }
+}
 
 .footerContainer{
 
