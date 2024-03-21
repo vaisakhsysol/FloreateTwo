@@ -1361,9 +1361,13 @@
         }
 
         .generalInformationHeading {
+            font-size: map-get($FontSize, medium);
+
             p {
                 width: 800px;
                 margin-top: 8px;
+            font-size: map-get($FontSize, regular);
+
                 
             }
         }
@@ -11853,8 +11857,11 @@
             }
     
             .generalInformationHeading {
+                font-size: map-get($FontSize, regular);
                 p {
                     width: 300px;
+                font-size: map-get($FontSize, small);
+
                 }
             }
     
@@ -12938,7 +12945,7 @@
         }
     
     }
-    
+
     .footerContainer{
 
         width: 100%;

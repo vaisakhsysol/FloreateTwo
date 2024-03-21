@@ -1070,9 +1070,13 @@
 .publicDisclosureTabs .pbContentTab section {
   margin-bottom: 140px;
 }
+.publicDisclosureTabs .pbContentTab .generalInformationHeading {
+  font-size: 25px;
+}
 .publicDisclosureTabs .pbContentTab .generalInformationHeading p {
   width: 800px;
   margin-top: 8px;
+  font-size: 20px;
 }
 .publicDisclosureTabs .pbContentTab .generalTable table {
   font-family: arial, sans-serif;
@@ -9201,8 +9205,12 @@
   .publicDisclosureTabs .pbContentTab section {
     margin-bottom: 140px;
   }
+  .publicDisclosureTabs .pbContentTab .generalInformationHeading {
+    font-size: 20px;
+  }
   .publicDisclosureTabs .pbContentTab .generalInformationHeading p {
     width: 300px;
+    font-size: 15px;
   }
   .publicDisclosureTabs .pbContentTab .generalTable table {
     font-family: arial, sans-serif;
