@@ -1799,6 +1799,60 @@
   }
 }
 
+.newsAndEventsContainer {
+  padding: 0 128px;
+  margin-top: 128px;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+.newsAndEventsContainer h3 {
+  font-size: 25px;
+  color: #023684;
+  margin-bottom: 32px;
+}
+.newsAndEventsContainer .newsContainer .card {
+  background-color: #F7F7F7;
+  color: white;
+  border-radius: 25px;
+  height: auto;
+  padding: 20px;
+  display: flex;
+}
+.newsAndEventsContainer .newsContainer .card .image {
+  max-width: 40%;
+}
+.newsAndEventsContainer .newsContainer .card .image img {
+  width: 100%;
+  border-radius: 25px;
+}
+.newsAndEventsContainer .newsContainer .card .content {
+  margin-left: 16px;
+}
+.newsAndEventsContainer .newsContainer .card .content h4 {
+  color: #023684;
+  font-size: 25px;
+}
+.newsAndEventsContainer .newsContainer .card .content p {
+  color: #023684;
+  margin-top: 16px;
+  font-size: 20px;
+}
+.newsAndEventsContainer .newsContainer .card .content p p:nth-child(1) {
+  font-size: 15px;
+  font-weight: 200;
+  margin-top: 16px;
+}
+.newsAndEventsContainer .newsContainer .card .content p p:nth-child(2) {
+  font-size: 12px;
+  margin-top: 16px;
+}
+.newsAndEventsContainer .newsContainer .cards {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
 .footerContainer {
   width: 100%;
   font-family: "Hind Madurai", sans-serif;
@@ -2077,6 +2131,8 @@
   .aboutMain .videoText {
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: #023684;
   }
   .aboutMain .videoText .videoIcon {
     background-color: #ffffff;
@@ -2140,6 +2196,7 @@
     display: flex;
     align-items: center;
     margin-top: 64px;
+    text-decoration: none;
   }
   .newsMain .link .videoIcon {
     background-color: #ffffff;
@@ -2219,7 +2276,7 @@
     font-family: "Fira Sans Condensed", sans-serif;
   }
   .features .featuresTwo {
-    margin-top: 32px;
+    margin-top: 64px;
     display: flex;
     gap: 16px;
   }
@@ -2568,7 +2625,7 @@
   .aboutHero .aboutHeroImg {
     display: flex;
     justify-content: space-between;
-    margin-top: 64px;
+    margin-top: 128px;
   }
   .aboutHero .aboutHeroImg .circle {
     width: 120px;
@@ -2579,7 +2636,7 @@
     align-items: center;
     border-radius: 250px;
     left: 65%;
-    z-index: 200;
+    z-index: 2;
     bottom: 30px;
     position: relative;
     animation: rotation 20s infinite;
@@ -2596,7 +2653,7 @@
   }
   .aboutHero .aboutHeroImg img {
     width: 30%;
-    height: 200px;
+    height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 0 100px 0 0;
@@ -2739,6 +2796,59 @@
     50% {
       transform: rotate(360deg);
     }
+  }
+  .newsAndEventsContainer {
+    padding: 0 128px;
+    margin-top: 128px;
+    font-family: "Fira Sans Condensed", sans-serif;
+  }
+  .newsAndEventsContainer h3 {
+    font-size: 25px;
+    color: #023684;
+    margin-bottom: 32px;
+  }
+  .newsAndEventsContainer .newsContainer .card {
+    background-color: #F7F7F7;
+    color: white;
+    border-radius: 25px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+  }
+  .newsAndEventsContainer .newsContainer .card .image {
+    max-width: 40%;
+  }
+  .newsAndEventsContainer .newsContainer .card .image img {
+    width: 100%;
+    border-radius: 25px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content {
+    margin-left: 16px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content h4 {
+    color: #023684;
+    font-size: 25px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p {
+    color: #023684;
+    margin-top: 16px;
+    font-size: 15px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p p:nth-child(1) {
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 16px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p p:nth-child(2) {
+    font-size: 12px;
+    margin-top: 16px;
+  }
+  .newsAndEventsContainer .newsContainer .cards {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -3578,7 +3688,7 @@
     align-items: center;
     border-radius: 250px;
     left: 62%;
-    z-index: 200;
+    z-index: 2;
     bottom: 30px;
     position: relative;
     animation: rotation 20s infinite;
@@ -4228,6 +4338,59 @@
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 150px 150px 0 0;
+  }
+  .newsAndEventsContainer {
+    padding: 0 32px;
+    margin-top: 128px;
+    font-family: "Fira Sans Condensed", sans-serif;
+  }
+  .newsAndEventsContainer h3 {
+    font-size: 25px;
+    color: #023684;
+    margin-bottom: 32px;
+  }
+  .newsAndEventsContainer .newsContainer .card {
+    background-color: #F7F7F7;
+    color: white;
+    border-radius: 25px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+  }
+  .newsAndEventsContainer .newsContainer .card .image {
+    max-width: 40%;
+  }
+  .newsAndEventsContainer .newsContainer .card .image img {
+    width: 100%;
+    border-radius: 25px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content {
+    margin-left: 16px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content h4 {
+    color: #023684;
+    font-size: 25px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p {
+    color: #023684;
+    margin-top: 16px;
+    font-size: 15px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p p:nth-child(1) {
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 16px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p p:nth-child(2) {
+    font-size: 12px;
+    margin-top: 16px;
+  }
+  .newsAndEventsContainer .newsContainer .cards {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -5215,7 +5378,7 @@
     align-items: center;
     border-radius: 250px;
     left: 62%;
-    z-index: 200;
+    z-index: 2;
     bottom: 30px;
     position: relative;
     animation: rotation 20s infinite;
@@ -5411,6 +5574,58 @@
     50% {
       transform: rotate(360deg);
     }
+  }
+  .newsAndEventsContainer {
+    padding: 0 16px;
+    margin-top: 128px;
+    font-family: "Fira Sans Condensed", sans-serif;
+  }
+  .newsAndEventsContainer h3 {
+    font-size: 25px;
+    color: #023684;
+    margin-bottom: 32px;
+  }
+  .newsAndEventsContainer .newsContainer .card {
+    background-color: #F7F7F7;
+    color: white;
+    border-radius: 25px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+  }
+  .newsAndEventsContainer .newsContainer .card .image {
+    max-width: 40%;
+  }
+  .newsAndEventsContainer .newsContainer .card .image img {
+    width: 100%;
+    border-radius: 25px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content {
+    margin-left: 16px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content h4 {
+    color: #023684;
+    font-size: 20px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p {
+    color: #023684;
+    margin-top: 16px;
+    font-size: 15px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p p:nth-child(1) {
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: 16px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p p:nth-child(2) {
+    margin-top: 16px;
+  }
+  .newsAndEventsContainer .newsContainer .cards {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
   }
   .footerContainer {
     width: 100%;
@@ -7771,6 +7986,60 @@
       transform: rotate(360deg);
     }
   }
+  .newsAndEventsContainer {
+    padding: 0 16px;
+    margin-top: 128px;
+    font-family: "Fira Sans Condensed", sans-serif;
+  }
+  .newsAndEventsContainer h3 {
+    font-size: 25px;
+    color: #023684;
+    margin-bottom: 32px;
+  }
+  .newsAndEventsContainer .newsContainer .card {
+    background-color: #F7F7F7;
+    color: white;
+    border-radius: 25px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .newsAndEventsContainer .newsContainer .card .image {
+    max-width: 100%;
+  }
+  .newsAndEventsContainer .newsContainer .card .image img {
+    width: 100%;
+    border-radius: 25px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content {
+    margin-top: 16px;
+    margin-left: 0px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content h4 {
+    color: #023684;
+    font-size: 20px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p {
+    color: #023684;
+    margin-top: 16px;
+    font-size: 15px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p p:nth-child(1) {
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: 16px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p p:nth-child(2) {
+    margin-top: 16px;
+  }
+  .newsAndEventsContainer .newsContainer .cards {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
   .footerContainer {
     width: 100%;
     font-family: "Hind Madurai", sans-serif;
@@ -9692,6 +9961,60 @@
     50% {
       transform: rotate(360deg);
     }
+  }
+  .newsAndEventsContainer {
+    padding: 0 16px;
+    margin-top: 128px;
+    font-family: "Fira Sans Condensed", sans-serif;
+  }
+  .newsAndEventsContainer h3 {
+    font-size: 25px;
+    color: #023684;
+    margin-bottom: 32px;
+  }
+  .newsAndEventsContainer .newsContainer .card {
+    background-color: #F7F7F7;
+    color: white;
+    border-radius: 25px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .newsAndEventsContainer .newsContainer .card .image {
+    max-width: 100%;
+  }
+  .newsAndEventsContainer .newsContainer .card .image img {
+    width: 100%;
+    border-radius: 25px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content {
+    margin-top: 16px;
+    margin-left: 0px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content h4 {
+    color: #023684;
+    font-size: 20px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p {
+    color: #023684;
+    margin-top: 16px;
+    font-size: 15px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p p:nth-child(1) {
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: 16px;
+  }
+  .newsAndEventsContainer .newsContainer .card .content p p:nth-child(2) {
+    margin-top: 16px;
+  }
+  .newsAndEventsContainer .newsContainer .cards {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
   }
   .footerContainer {
     width: 100%;

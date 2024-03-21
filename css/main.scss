@@ -2283,6 +2283,79 @@
     }
 }
 
+.newsAndEventsContainer{
+    padding: 0 128px;
+    margin-top: 128px;
+    font-family: "Fira Sans Condensed", sans-serif;
+
+    h3{
+        font-size: map-get($FontSize, medium);
+        color: $textColor;
+        margin-bottom: 32px;
+
+    }
+
+    .newsContainer{
+        .card {
+            background-color: #F7F7F7;
+            color: white;
+            border-radius: 25px;
+            // padding: 1rem;
+            height: auto;
+            padding: 20px;
+            display: flex;
+
+            .image{
+                max-width: 40%;
+
+                img{
+                    width: 100%;
+                    border-radius: 25px;
+                }
+            }
+            .content{
+                margin-left: 16px;
+                h4{
+                    color: $textColor;
+                    font-size: map-get($FontSize, medium);
+                }
+
+                p{
+                    color: $textColor;
+                    margin-top: 16px;
+                    font-size: map-get($FontSize, regular);
+
+
+                    p:nth-child(1){
+                        font-size: map-get($FontSize, small);
+                        font-weight: 200;
+                        margin-top: 16px;
+    
+                    }
+
+                    p:nth-child(2){
+                        font-size: map-get($FontSize, vsmall);
+                        margin-top: 16px;
+                    }
+
+                }
+               
+
+            }
+            
+          }
+          
+          .cards {
+            max-width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            grid-gap: 1rem;
+          }
+    }
+
+}
+
 .footerContainer{
 
     width: 100%;
@@ -2643,6 +2716,8 @@
         .videoText{
             display: flex;
             align-items: center;
+            text-decoration: none;
+            color: $textColor;
             .videoIcon{
                 background-color: $primaryColor;
                 width: 50px;
@@ -2713,6 +2788,8 @@
             display: flex;
             align-items: center;
             margin-top: 64px;
+            text-decoration: none;
+
             .videoIcon{
                 background-color: $primaryColor;
                     width: 50px;
@@ -2817,7 +2894,7 @@
         }
     
         .featuresTwo{
-            margin-top: 32px;
+            margin-top: 64px;
             display: flex;
             gap: 16px;
             .fLeft{
@@ -3267,7 +3344,7 @@
         .aboutHeroImg{
             display: flex;
             justify-content: space-between;
-            margin-top: 64px;
+            margin-top: 128px;
             // top: -200px;
             // left: 60%;
     
@@ -3280,7 +3357,7 @@
                 align-items: center;
                 border-radius: 250px;
                 left: 65%;
-                z-index: 200;
+                z-index: 2;
                 bottom: 30px;
                 position: relative;
                 animation: rotation 20s infinite;
@@ -3297,7 +3374,7 @@
             }
             img{
                 width: 30%;
-                height: 200px;
+                height: 300px;
                 object-fit: cover;
                 border-radius: 0 100px 0 0;
                 top: 0px;
@@ -3480,6 +3557,79 @@
             }
     
         }
+    }
+
+    .newsAndEventsContainer{
+        padding: 0 128px;
+        margin-top: 128px;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+        h3{
+            font-size: map-get($FontSize, medium);
+            color: $textColor;
+            margin-bottom: 32px;
+    
+        }
+    
+        .newsContainer{
+            .card {
+                background-color: #F7F7F7;
+                color: white;
+                border-radius: 25px;
+                // padding: 1rem;
+                height: auto;
+                padding: 20px;
+                display: flex;
+    
+                .image{
+                    max-width: 40%;
+    
+                    img{
+                        width: 100%;
+                        border-radius: 25px;
+                    }
+                }
+                .content{
+                    margin-left: 16px;
+                    h4{
+                        color: $textColor;
+                        font-size: map-get($FontSize, medium);
+                    }
+    
+                    p{
+                        color: $textColor;
+                        margin-top: 16px;
+                        font-size: map-get($FontSize, small);
+    
+    
+                        p:nth-child(1){
+                            font-size: map-get($FontSize, small);
+                            font-weight: 200;
+                            margin-top: 16px;
+        
+                        }
+    
+                        p:nth-child(2){
+                            font-size: map-get($FontSize, vsmall);
+                            margin-top: 16px;
+                        }
+    
+                    }
+                   
+    
+                }
+                
+              }
+              
+              .cards {
+                max-width: 100%;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); 
+                grid-gap: 1rem;
+              }
+        }
+    
     }
 
     
@@ -4547,7 +4697,7 @@
                 align-items: center;
                 border-radius: 250px;
                 left: 62%;
-                z-index: 200;
+                z-index: 2;
                 bottom: 30px;
                 position: relative;
                 animation: rotation 20s infinite;
@@ -5388,6 +5538,79 @@
                 }
             }
         }
+    }
+
+    .newsAndEventsContainer{
+        padding: 0 32px;
+        margin-top: 128px;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+        h3{
+            font-size: map-get($FontSize, medium);
+            color: $textColor;
+            margin-bottom: 32px;
+    
+        }
+    
+        .newsContainer{
+            .card {
+                background-color: #F7F7F7;
+                color: white;
+                border-radius: 25px;
+                // padding: 1rem;
+                height: auto;
+                padding: 20px;
+                display: flex;
+    
+                .image{
+                    max-width: 40%;
+    
+                    img{
+                        width: 100%;
+                        border-radius: 25px;
+                    }
+                }
+                .content{
+                    margin-left: 16px;
+                    h4{
+                        color: $textColor;
+                        font-size: map-get($FontSize, medium);
+                    }
+    
+                    p{
+                        color: $textColor;
+                        margin-top: 16px;
+                        font-size: map-get($FontSize, small);
+    
+    
+                        p:nth-child(1){
+                            font-size: map-get($FontSize, small);
+                            font-weight: 200;
+                            margin-top: 16px;
+        
+                        }
+    
+                        p:nth-child(2){
+                            font-size: map-get($FontSize, vsmall);
+                            margin-top: 16px;
+                        }
+    
+                    }
+                   
+    
+                }
+                
+              }
+              
+              .cards {
+                max-width: 100%;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); 
+                grid-gap: 1rem;
+              }
+        }
+    
     }
 
 }
@@ -6649,7 +6872,7 @@
                 align-items: center;
                 border-radius: 250px;
                 left: 62%;
-                z-index: 200;
+                z-index: 2;
                 bottom: 30px;
                 position: relative;
                 animation: rotation 20s infinite;
@@ -6899,6 +7122,79 @@
             }
     
         }
+    }
+
+    .newsAndEventsContainer{
+        padding: 0 16px;
+        margin-top: 128px;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+        h3{
+            font-size: map-get($FontSize, medium);
+            color: $textColor;
+            margin-bottom: 32px;
+    
+        }
+    
+        .newsContainer{
+            .card {
+                background-color: #F7F7F7;
+                color: white;
+                border-radius: 25px;
+                // padding: 1rem;
+                height: auto;
+                padding: 20px;
+                display: flex;
+    
+                .image{
+                    max-width: 40%;
+    
+                    img{
+                        width: 100%;
+                        border-radius: 25px;
+                    }
+                }
+                .content{
+                    margin-left: 16px;
+                    h4{
+                        color: $textColor;
+                        font-size: map-get($FontSize, regular);
+                    }
+    
+                    p{
+                        color: $textColor;
+                        margin-top: 16px;
+                        font-size: map-get($FontSize, small);
+    
+    
+                        p:nth-child(1){
+                            font-size: map-get($FontSize, vsmall);
+                            font-weight: 200;
+                            margin-top: 16px;
+        
+                        }
+    
+                        p:nth-child(2){
+                            font-size: map-get($FontSize, vvsmall);
+                            margin-top: 16px;
+                        }
+    
+                    }
+                   
+    
+                }
+                
+              }
+              
+              .cards {
+                max-width: 100%;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr); 
+                grid-gap: 1rem;
+              }
+        }
+    
     }
 
     .footerContainer{
@@ -9983,6 +10279,81 @@
         }
     }
 
+    .newsAndEventsContainer{
+        padding: 0 16px;
+        margin-top: 128px;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+        h3{
+            font-size: map-get($FontSize, medium);
+            color: $textColor;
+            margin-bottom: 32px;
+    
+        }
+    
+        .newsContainer{
+            .card {
+                background-color: #F7F7F7;
+                color: white;
+                border-radius: 25px;
+                // padding: 1rem;
+                height: auto;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+    
+                .image{
+                    max-width: 100%;
+    
+                    img{
+                        width: 100%;
+                        border-radius: 25px;
+                    }
+                }
+                .content{
+                    margin-top: 16px;
+                    margin-left: 0px;
+                    h4{
+                        color: $textColor;
+                        font-size: map-get($FontSize, regular);
+                    }
+    
+                    p{
+                        color: $textColor;
+                        margin-top: 16px;
+                        font-size: map-get($FontSize, small);
+    
+    
+                        p:nth-child(1){
+                            font-size: map-get($FontSize, vsmall);
+                            font-weight: 200;
+                            margin-top: 16px;
+        
+                        }
+    
+                        p:nth-child(2){
+                            font-size: map-get($FontSize, vvsmall);
+                            margin-top: 16px;
+                        }
+    
+                    }
+                   
+    
+                }
+                
+              }
+              
+              .cards {
+                max-width: 100%;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr); 
+                grid-gap: 1rem;
+              }
+        }
+    
+    }
+
     .footerContainer{
 
         width: 100%;
@@ -12493,6 +12864,81 @@
         }
     }
 
+    .newsAndEventsContainer{
+        padding: 0 16px;
+        margin-top: 128px;
+        font-family: "Fira Sans Condensed", sans-serif;
+    
+        h3{
+            font-size: map-get($FontSize, medium);
+            color: $textColor;
+            margin-bottom: 32px;
+    
+        }
+    
+        .newsContainer{
+            .card {
+                background-color: #F7F7F7;
+                color: white;
+                border-radius: 25px;
+                // padding: 1rem;
+                height: auto;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+    
+                .image{
+                    max-width: 100%;
+    
+                    img{
+                        width: 100%;
+                        border-radius: 25px;
+                    }
+                }
+                .content{
+                    margin-top: 16px;
+                    margin-left: 0px;
+                    h4{
+                        color: $textColor;
+                        font-size: map-get($FontSize, regular);
+                    }
+    
+                    p{
+                        color: $textColor;
+                        margin-top: 16px;
+                        font-size: map-get($FontSize, small);
+    
+    
+                        p:nth-child(1){
+                            font-size: map-get($FontSize, vsmall);
+                            font-weight: 200;
+                            margin-top: 16px;
+        
+                        }
+    
+                        p:nth-child(2){
+                            font-size: map-get($FontSize, vvsmall);
+                            margin-top: 16px;
+                        }
+    
+                    }
+                   
+    
+                }
+                
+              }
+              
+              .cards {
+                max-width: 100%;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr); 
+                grid-gap: 1rem;
+              }
+        }
+    
+    }
+    
     .footerContainer{
 
         width: 100%;
