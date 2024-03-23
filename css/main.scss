@@ -9842,31 +9842,38 @@
            }
     
            .aboutRight{
-               width: 100%;
-               margin-top: 32px;
-               
-    
-               img{
-                   width: 100%;
-                   border-radius: 25px;
-                   gap: 8px;
-               }
-    
-               img:nth-child(1){
-                   width: 50%;
-                   position: relative;
-                   top: 0;
-                   object-fit: cover;
-                   height: 250px;
-               }
-    
-               img:nth-child(2){
-                   width: 50%;
-                   object-fit: cover;
-                   height: 250px;
-    
-               }
-           }
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-top: 32px;
+            
+
+            img{
+                // width: 100%;
+                border-radius: 15px;
+            }
+
+            img:nth-child(1){
+                width: 50%;
+                position: relative;
+                top: 0px;
+                object-fit: cover;
+                filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+                
+                // height: 250px;
+            }
+
+            img:nth-child(2){
+                width: 50%;
+                object-fit: cover;
+                filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+
+                // height: 250px;
+
+            }
+        }
        }
     
         

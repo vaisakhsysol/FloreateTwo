@@ -7648,26 +7648,28 @@
   }
   .facilContainer .about:nth-child(5) .aboutRight {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
     margin-top: 32px;
   }
   .facilContainer .about:nth-child(5) .aboutRight img {
-    width: 100%;
-    border-radius: 25px;
-    gap: 8px;
+    border-radius: 15px;
   }
   .facilContainer .about:nth-child(5) .aboutRight img:nth-child(1) {
     width: 50%;
     position: relative;
-    top: 0;
+    top: 0px;
     -o-object-fit: cover;
        object-fit: cover;
-    height: 250px;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
   }
   .facilContainer .about:nth-child(5) .aboutRight img:nth-child(2) {
     width: 50%;
     -o-object-fit: cover;
        object-fit: cover;
-    height: 250px;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
   }
   .sportsContainer svg {
     width: 70px;
