@@ -10045,7 +10045,7 @@
                 align-items: center;
                 border-radius: 250px;
                 left: 32%;
-                z-index: 200;
+                z-index: 2;
                 bottom: 30px;
                 position: relative;
                 animation: rotation 20s infinite;
@@ -10502,11 +10502,28 @@
         
     }
     
+    .cursor{
+        background:$textColor;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        z-index: 10000;
+        display: none;
+    }
     
 }
 
 
 @media screen and (max-width:424px){
+    .cursor{
+        background:$textColor;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        z-index: 10000;
+        display: none;
+    }
+    
     .container{
         width: 100%;
         height: 100%;
@@ -12634,7 +12651,7 @@
                 align-items: center;
                 border-radius: 250px;
                 left: 32%;
-                z-index: 50;
+                z-index: 2;
                 bottom: 30px;
                 position: relative;
                 animation: rotation 20s infinite;

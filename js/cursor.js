@@ -32,7 +32,7 @@ item.addEventListener('mouseenter',()=>{
 
 item.addEventListener('mousemove',()=>{
     // console.log("entered");
-    gsap.to(hand,0.5,{
+    gsap.to(hand,1,{
         x:mouseX,
         y:mouseY
     })
@@ -41,7 +41,7 @@ item.addEventListener('mousemove',()=>{
 
 item.addEventListener('mouseleave',()=>{
     // console.log("entered");
-    gsap.to(hand,0.2,{
+    gsap.to(hand,1,{
         scale : 0,
         opacity:0,
         top:'40',
@@ -74,7 +74,7 @@ newsItemContainer.addEventListener('mousemove',()=>{
 
 newsItemContainer.addEventListener('mouseleave',()=>{
     // console.log("entered");
-    gsap.to(clickHand,0.2,{
+    gsap.to(clickHand,1,{
         scale : 0,
         opacity:0,
         top:'40',
